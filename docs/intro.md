@@ -13,4 +13,6 @@ sidebar_position: 1
 - Sample job script examples
 - Common Errors for Slurm etc. ()
 - PArtitions : Compute (At least 4 cores, job cannot exceed 7d), gpu (No core restriction, GPU jobs, max 1d)
-- 
+-
+
+- What is github, how to?
