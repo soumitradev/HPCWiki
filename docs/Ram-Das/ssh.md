@@ -10,7 +10,7 @@ key has a file extension `.pub`. For example, if the file name of the
 SSH private key is `id_rsa`, then the file name of the public key would
 be `id_rsa.pub`.
 
-On Windows: Using PuTTY {#on-windows-using-putty .unnumbered}
+On Windows: Using PuTTY
 -----------------------
 
 Users are recommended to use PuTTY to access SSH in Windows. The
@@ -43,7 +43,7 @@ version of the package.
 
 ![PuTTY Key Generator.](./PuTTY-Windows.png){#PuTTY-gen}
 
-On Windows: Using Windows 10 OpenSSH Client {#on-windows-using-windows-10-openssh-client .unnumbered}
+On Windows: Using Windows 10 OpenSSH Client
 -------------------------------------------
 
 Microsoft, from **Windows 10** build **1803** and onwards have shipped
@@ -77,7 +77,7 @@ will help in generating the SSH keys.
 
 ![Windows 10 Key Random Art.](./OpenSSH-Key-Art-Windows.png){#windows-key-art}
 
-On macOS {#on-macos .unnumbered}
+On macOS 
 --------
 
 Users are recommended to use the `Terminal` application to generate ssh
@@ -105,7 +105,7 @@ the Finder.
 
     ![macOS Key Random Art.](./OpenSSH-Key-Art-macOS.png){#macOS-key}
 
-On Linux {#on-linux .unnumbered}
+On Linux
 --------
 
 To generate `ssh` keys on a Linux based operating system,
