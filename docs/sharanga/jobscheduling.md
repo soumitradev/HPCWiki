@@ -1,5 +1,9 @@
-Job Scheduling using Slurm
-==========================
+---
+sidebar_position: 6
+---
+
+Job Scheduling
+==============
 
 What is Slurm?
 --------------
@@ -927,7 +931,7 @@ This is somewhat analogous to `mpirun`. Users are requested **not** to
 use `mpirun` and instead use `srun`. `srun` takes care of the allocation
 and efficient management of resources via Slurm automatically.
 
-How to view the status of partitions? {#sinfo-partition}
+How to view the status of partitions?
 -------------------------------------
 
 Users can use the `sinfo` command to view the status of partitions and
@@ -1105,53 +1109,53 @@ The `NODELIST(REASON)` section in the output of the above command will
 have the reason, why Slurm is unable to run the job. Here are the most
 common reasons.
 
-### BadConstraints {#badconstraints .unnumbered}
+### BadConstraints
 
 The job's constraints can not be satisfied.
 
-### Cleaning {#cleaning .unnumbered}
+### Cleaning
 
 The job is being requeued and still cleaning up from its previous
 execution.
 
-### Dependency {#dependency .unnumbered}
+### Dependency
 
 This job is waiting for a dependent job to complete.
 
-### JobHeldAdmin {#jobheldadmin .unnumbered}
+### JobHeldAdmin
 
 The job is held by a system administrator. Please contact the system
 administrator for more information.
 
-### JobHeldUser {#jobhelduser .unnumbered}
+### JobHeldUser
 
 The job is held by the user.
 
-### NonZeroExitCode {#nonzeroexitcode .unnumbered}
+### NonZeroExitCode
 
 The job terminated with a non-zero exit code.
 
-### PartitionDown {#partitiondown .unnumbered}
+### PartitionDown
 
 The partition required by this job is in a DOWN state.
 
-### Priority {#priority .unnumbered}
+### Priority
 
 One or more higher priority jobs exist for this partition or advanced
 reservation.
 
-### QOSResourceLimit {#qosresourcelimit .unnumbered}
+### QOSResourceLimit
 
 The job's Quality of Service (QOS) has reached some resource limit.
 
-### ReqNodeNotAvail {#reqnodenotavail .unnumbered}
+### ReqNodeNotAvail
 
 Some node specifically required by the job is not currently available.
 
-### Resources {#resources .unnumbered}
+### Resources
 
 The job is waiting for resources to become available.
 
-### TimeLimit {#timelimit .unnumbered}
+### TimeLimit
 
 The job exhausted its time limit.

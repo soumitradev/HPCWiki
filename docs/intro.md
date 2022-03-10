@@ -2,8 +2,13 @@
 sidebar_position: 1
 ---
 
-# Welcome to HPC Wiki
+HPC at Sharanga
+===============
 
-- Topics
-- More Topics
-- More mOre topics
+- [**SSH Key Pairs** and How to Generate them](sharanga/ssh.md)
+- [**Login and Accounts** for the HPC Facility](sharanga/login.md)
+- [**Files and Directories**](sharanga/files.md)
+- [**Storage Space**](sharanga/storage.md)
+- [**Job Scheduling** with Slurm](sharanga/jobscheduling.md)
+- [**Package Management** with ModuleFiles and Spack](sharanga/package.md)
+- [**Miscellaneous**](sharanga/misc.md)

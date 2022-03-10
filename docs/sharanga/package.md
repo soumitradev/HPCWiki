@@ -1,5 +1,10 @@
-Package Management with Modulefiles
-===================================
+---
+sidebar_position: 7
+---
+
+
+Package Management
+==================
 
 What are modulefiles?
 ---------------------

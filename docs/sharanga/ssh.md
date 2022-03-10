@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 How to generate an SSH key pair?
 ================================
 
@@ -41,7 +45,7 @@ version of the package.
 -   Please share the public key with the system administrator, who will
     copy it to the SSH directory of the HPC facility.
 
-![PuTTY Key Generator.](./PuTTY-Windows.png){#PuTTY-gen}
+![PuTTY Key Generator.](./PuTTY-Windows.png)
 
 On Windows: Using Windows 10 OpenSSH Client
 -------------------------------------------
@@ -75,7 +79,7 @@ will help in generating the SSH keys.
 -   Please share the public key with the system administrator, who will
     copy it to the SSH directory of the HPC facility.
 
-![Windows 10 Key Random Art.](./OpenSSH-Key-Art-Windows.png){#windows-key-art}
+![Windows 10 Key Random Art.](./OpenSSH-Key-Art-Windows.png)
 
 On macOS 
 --------
@@ -103,7 +107,7 @@ the Finder.
 -   Please share the public key with the system administrator, who will
     copy it to the SSH directory of the HPC facility.
 
-    ![macOS Key Random Art.](./OpenSSH-Key-Art-macOS.png){#macOS-key}
+    ![macOS Key Random Art.](./OpenSSH-Key-Art-macOS.png)
 
 On Linux
 --------
@@ -128,4 +132,4 @@ To generate `ssh` keys on a Linux based operating system,
 -   Please share the public key with the system administrator, who will
     copy it to the SSH directory of the HPC facility.
 
-![Linux Key Random Art.](./OpenSSH-Key-Art-Linux.png){#Linux-key}
+![Linux Key Random Art.](./OpenSSH-Key-Art-Linux.png)
