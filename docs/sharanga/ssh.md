@@ -2,8 +2,8 @@
 sidebar_position: 2
 ---
 
-How to generate an SSH key pair?
-================================
+
+### How to generate an SSH key pair?
 
 An SSH key pair consists of two keys, namely, the public key and the
 private key. The public key is stored in the SSH directory of the HPC
@@ -14,8 +14,7 @@ key has a file extension `.pub`. For example, if the file name of the
 SSH private key is `id_rsa`, then the file name of the public key would
 be `id_rsa.pub`.
 
-On Windows: Using PuTTY
------------------------
+#### On Windows: Using PuTTY
 
 Users are recommended to use PuTTY to access SSH in Windows. The
 installer for PuTTY can be downloaded from
@@ -25,8 +24,7 @@ version of the package.
 
 -   Once installation is complete, go to
     `Start Menu -> All Programs -> PuTTYgen` and then launch the
-    application. Figure [1](#PuTTY-gen){reference-type="ref"
-    reference="PuTTY-gen"} shows the screenshot of the launched
+    application. Image below shows the screenshot of the launched
     application.
 
 -   For the type of key to generate, please select RSA and click
@@ -61,23 +59,13 @@ will help in generating the SSH keys.
 
 -   Type `ssh-keygen` in the console and press ENTER.
 
--   In order to generate the SSH key pair and store them securely,
-    Windows may prompt you to enter a directory where the key pair will
-    be stored. You may press Enter to choose the default location
-    provided.
+-   In order to generate the SSH key pair and store them securely, Windows may prompt you to enter a directory where the key pair will be stored. You may press Enter to choose the default location provided.
 
--   Next, you'll be prompted to enter your passphrase for the key
-    (Optional).
+-   Next, you'll be prompted to enter your passphrase for the key (Optional).
 
--   Once the process is completed, two files will be generated along
-    with the `SHA256` fingerprint. The key's random art image will also
-    be displayed on-screen. A sample screenshot is shown in Figure
-    [2](#windows-key-art){reference-type="ref"
-    reference="windows-key-art"}. Note that the generated image and
-    fingerprint will differ from system to system.
+-   Once the process is completed, two files will be generated along with the `SHA256` fingerprint. The key's random art image will also be displayed on-screen. A sample screenshot is shown below. Note that the generated image and fingerprint will differ from system to system.
 
--   Please share the public key with the system administrator, who will
-    copy it to the SSH directory of the HPC facility.
+-   Please share the public key with the system administrator, who will copy it to the SSH directory of the HPC facility.
 
 ![Windows 10 Key Random Art.](./OpenSSH-Key-Art-Windows.png)
 
@@ -100,8 +88,7 @@ the Finder.
 -   Once the process is completed, two files will be generated along
     with the `SHA256` fingerprint. The key's random art image will be
     displayed on-screen. A sample screenshot generated on a mac system
-    is shown in Figure [3](#macOS-key){reference-type="ref"
-    reference="macOS-key"}. Note that the generated image and
+    is shown below. Note that the generated image and
     fingerprint will differ from system to system.
 
 -   Please share the public key with the system administrator, who will
@@ -125,8 +112,7 @@ To generate `ssh` keys on a Linux based operating system,
 -   Once the process is completed, two files will be generated along
     with the `SHA256` fingerprint. The key's random art image will also
     be displayed on-screen. A sample screenshot generated on a linux
-    system is shown in Figure [4](#Linux-key){reference-type="ref"
-    reference="Linux-key"}. Note that the generated image and
+    system is shown below. Note that the generated image and
     fingerprint will differ from system to system.
 
 -   Please share the public key with the system administrator, who will

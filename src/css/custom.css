@@ -6,25 +6,35 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --ifm-color-primary: #C26E6E;
+  --ifm-color-primary-dark: #506A7A;
+  --ifm-color-primary-darker: #234154;
+  --ifm-color-primary-darkest: #102938;
+  --ifm-color-primary-light: #D17171;
+  --ifm-color-primary-lighter: #D98989;
+  --ifm-color-primary-lightest: #DEA2A2;
+  --ifm-code-font-size: 90%;
+  --ifm-link-color: var(--ifm-color-primary-darker);
+  --ifm-menu-color-active : var(--ifm-color-primary-darker):
+  --ifm-navbar-link-active-color: var(--ifm-color-primary-darker);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-darker);
+  --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #C26E6E;
+  --ifm-color-primary-dark: #506A7A;
+  --ifm-color-primary-darker: #234154;
+  --ifm-color-primary-darkest: #102938;
+  --ifm-color-primary-light: #4A89B0;
+  --ifm-color-primary-lighter: #577E96;
+  --ifm-color-primary-lightest: #8CBEDE;
+  --ifm-link-color: var(--ifm-color-primary-lighter);
+  --ifm-menu-color-active : var(--ifm-color-primary-lighter):
+  --ifm-navbar-link-active-color: var(--ifm-color-primary-lighter);
+  --ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
+  --ifm-breadcrumb-color-active: var(--ifm-color-primary-lighter);
 }
 
 .docusaurus-highlight-code-line {
@@ -36,4 +46,44 @@
 
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+:root {
+  --ifm-font-family-base: 'Open Sans';
+}
+.navbar .navbar__items {
+  flex: auto;
+}
+/* Header Dropdown Menu */
+.dropdown__link {
+  font-size: inherit;
+}
+
+
+
+
+/* Remove shadow on the left */
+:root {
+  --ifm-global-shadow-md: 0px;
+}
+
+/* Announcement Bar */
+div[class^='announcementBarContent'] {
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+}
+
+div[class^='announcementBarContent'] a {
+  color: var(--ifm-link-color);
+  text-decoration: inherit;
+}
+
+div[class^='announcementBarContent'] a:hover {
+  color: var(--ifm-link-color);
+  text-decoration: underline;
+}
+
+.post-content p {
+    text-align: justify;
 }

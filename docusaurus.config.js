@@ -32,17 +32,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: 'HPC',
+        title: '',
         logo: {
           alt: 'My Site Logo',
-          src: 'img/BITS_Pilani-logo_2.png',
+          src: 'img/sharanga.svg',
         },
         items: [
           {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
         ],
       },
@@ -53,7 +53,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Docs',
                 to: '/docs/intro',
               },
             ],
@@ -62,16 +62,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'http://www.wehavenostackoverflowyetbutwereallyshould.com',
-              },
-              {
-                label: 'Discord',
-                href: 'http://www.wehavenodiscordyet.com',
-              },
-              {
-                label: 'Twitter',
-                href: 'http://www.wehavenotwitteryet.com',
+                label: 'E-Mail',
+                href: 'hpc@hyderabad.bits-pilani.ac.in',
               },
             ],
           },
