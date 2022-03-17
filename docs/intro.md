@@ -1,14 +1,16 @@
 ---
 sidebar_position: 1
+hide_table_of_contents: true
+hide_title: true
+pagination_next : null
+pagination_prev : null
 ---
 
-HPC at Sharanga
-===============
+# HPC at Sharanga
 
-- [**SSH Key Pairs** and How to Generate them](sharanga/ssh.md)
-- [**Login and Accounts** for the HPC Facility](sharanga/login.md)
+- [**Login and Accounts**](sharanga/login.md)
 - [**Files and Directories**](sharanga/files.md)
 - [**Storage Space**](sharanga/storage.md)
-- [**Job Scheduling** with Slurm](sharanga/jobscheduling.md)
-- [**Package Management** with ModuleFiles and Spack](sharanga/package.md)
+- [**Job Scheduling**](sharanga/jobscheduling.md)
+- [**Package Management**](sharanga/package.md)
 - [**Miscellaneous**](sharanga/misc.md)

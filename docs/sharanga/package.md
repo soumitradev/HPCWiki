@@ -1,22 +1,21 @@
 ---
 sidebar_position: 7
+sidebar_label: "Package Management"
+hide_table_of_contents: true
+hide_title: true
+pagination_next : null
+pagination_prev : null
 ---
 
+## Package Management
 
-Package Management
-==================
+### What are modulefiles?
 
-What are modulefiles?
----------------------
+Modulefiles are files that are used to setup the local environment to configure various software packages.
 
-Modulefiles are files that are used to setup the local environment to
-configure various software packages.
+### How to view the list of available packages in the facility?
 
-How to view the list of available packages in the facility?
------------------------------------------------------------
-
-On Sharanga, users can use the following command to view the list of
-installed packages (with the versions).
+On Sharanga, users can use the following command to view the list of installed packages (with the versions).
 
 ``` {.bash}
 $ module avail
@@ -39,91 +38,65 @@ $ module avail
    bcbio/1.1.1                                   mummer/3.23
 ```
 
-How to load and unload a package(s)?
-------------------------------------
+### How to load and unload a package(s)?
 
-Users can use the `module load` command to load a package into their
-current environment. For example, a user who wishes to use `PETSc`
-library can use the following syntax.
+Users can use the `module load` command to load a package into their current environment. For example, a user who wishes to use `PETSc` library can use the following syntax.
 
 ``` {.bash}
    $ module load petsc
 ```
 
-If a user wishes to unload the `PETSc` library from their user
-environment, they can use the `module rm` command.
+If a user wishes to unload the `PETSc` library from their user environment, they can use the `module rm` command.
 
 ``` {.bash}
    $ module rm petsc
 ```
 
-If a user wishes to unload all the loaded libraries from their user
-environment, then they can use the following command.
+If a user wishes to unload all the loaded libraries from their user environment, then they can use the following command.
 
 ``` {.bash}
    $ module purge
 ```
 
-How to view the list of loaded packages?
-----------------------------------------
+### How to view the list of loaded packages?
 
-Users can use the following command to find the list of currently loaded
-modules.
+Users can use the following command to find the list of currently loaded modules.
 
 ``` {.bash}
    $ module list
 ```
 
-How do I check the version of the package installed?
-----------------------------------------------------
+### How do I check the version of the package installed?
 
-Users can type the following command to find the version of the
-installed package.
+Users can type the following command to find the version of the installed package.
 
 ``` {.bash}
    $ module spider <package name>
 ```
 
-Note that the user may get additional information about the package by
-using the following command
+Note that the user may get additional information about the package by using the following command
 
 ``` {.bash}
    $ module help <package name>
 ```
 
-After submitting a job, I am getting messages like "module: command not found\". Why am I getting this message?
----------------------------------------------------------------------------------------------------------------
+### After submitting a job, I am getting messages like "module: command not found\". Why am I getting this message?
 
-Modulefiles are by default sourced by the default shell `/bin/bash`. You
-may get this message if you have changed the shell to something other
-than `bash`. We request you to change the shell back to `bash` for
-optimal functioning. Users can use the `chsh` shell command to change
-their user shell environment back to `bash`. Another reason could be due
-to the unavailability of the desired package.
+Modulefiles are by default sourced by the default shell `/bin/bash`. You may get this message if you have changed the shell to something other than `bash`. We request you to change the shell back to `bash` for optimal functioning. Users can use the `chsh` shell command to change their user shell environment back to `bash`. Another reason could be due to the unavailability of the desired package.
 
-Package Management with Spack
-=============================
+## Package Management with Spack
 
-What is Spack?
---------------
+### What is Spack?
 
-The HPC facility provides users access to Spack, a package management
-tool designed to support multiple versions and configurations of a
-software on a wide variety of platforms and environments.
+The HPC facility provides users access to Spack, a package management tool designed to support multiple versions and configurations of a software on a wide variety of platforms and environments.
 
-What is the difference between Modulefiles and Spack?
------------------------------------------------------
+### What is the difference between Modulefiles and Spack?
 
-Modulefiles are either generated by the package or by the administrator.
-On the other hand, Spack is a superset of modulefiles and generates the
-appropriate modulefiles for the installed package. An advantage of Spack
-is that it offers dependency management for packages.
+Modulefiles are either generated by the package or by the administrator. On the other hand, Spack is a superset of modulefiles and generates the appropriate modulefiles for the installed package. An advantage of Spack is that it offers dependency management for packages.
 
-How to view the list of available packages installed in the facility?
----------------------------------------------------------------------
+### How to view the list of available packages installed in the facility?
 
-Users can use the `spack` command to view the list of installed
-packages.
+Users can use the `spack` command to view the list of installed packages.
 
 ``` {.bash}
   $ spack find
@@ -142,65 +115,45 @@ cmake@3.16.2     gettext@0.20.1  libffi@3.2.1          mpc@1.1.0        ncurses@
 diffutils@3.7    gmp@6.1.2       libiconv@1.16         mpc@1.1.0        openssl@1.1.1d  
 ```
 
-Note that the above list is for representational purpose and differs
-from the actual output on Sharanga.
+Note that the above list is for representational purpose and differs from the actual output on Sharanga.
 
-How to load and unload a package(s)?
-------------------------------------
+### How to load and unload a package(s)?
 
-Users can use the `spack load` command to load the package into their
-current environment. For example a user who wishes to use `PETSc`
-library can use the following syntax.
+Users can use the `spack load` command to load the package into their current environment. For example a user who wishes to use `PETSc` library can use the following syntax.
 
 ``` {.bash}
   $ spack load petsc
 ```
 
-If a user wishes to unload the `PETSc` library from their environment,
-they can use the `spack unload` command.
+If a user wishes to unload the `PETSc` library from their environment, they can use the `spack unload` command.
 
 ``` {.bash}
   $ spack unload petsc
 ```
 
-If a user wishes to unload all the loaded libraries from their user
-environment, please use the following command.
+If a user wishes to unload all the loaded libraries from their user environment, please use the following command.
 
 ``` {.bash}
   $ spack unload
 ```
 
-How to view the list of loaded packages?
-----------------------------------------
+### How to view the list of loaded packages?
 
-Users can use the following command to find the list of currently loaded
-packages.
+Users can use the following command to find the list of currently loaded packages.
 
 ``` {.bash}
   $ spack find --loaded
 ```
 
-How do I check the version of the package installed?
-----------------------------------------------------
+### How do I check the version of the package installed?
 
-Users can type `spack find <package name>` to find the version of the
-package installed. Note that the package version is shown after `@` in
-the output.
+Users can type `spack find <package name>` to find the version of the package installed. Note that the package version is shown after `@` in the output.
 
-After submitting a job, I am getting messages like "spack: command not found\". Why am I getting this message? 
---------------------------------------------------------------------------------------------------------------
+### After submitting a job, I am getting messages like "spack: command not found\". Why am I getting this message? 
 
-Spack is sourced by the default shell `/bin/bash`. You may get this
-message if you have changed the shell to something other than `bash`. We
-request you to change the shell back to `bash` for optimal functioning.
-Users can use the `chsh` shell command to change their user shell
-environment back to `bash`. Another reason could be due to the
-unavailability of the desired package.
+Spack is sourced by the default shell `/bin/bash`. You may get this message if you have changed the shell to something other than `bash`. We request you to change the shell back to `bash` for optimal functioning. Users can use the `chsh` shell command to change their user shell environment back to `bash`. Another reason could be due to the unavailability of the desired package.
 
-Between Modulefiles and Spack, which is more user friendly? 
------------------------------------------------------------
+### Between Modulefiles and Spack, which is more user friendly? 
 
-Spack is more user friendly and also offers bash auto-completion for its
-commands. It simplifies package management and version control for the
-system administrator.
+Spack is more user friendly and also offers bash auto-completion for its commands. It simplifies package management and version control for the system administrator.
 
