@@ -245,8 +245,8 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
     300 seconds and users can change this value accordingly.
 
     ``` {.bash}
-       $ Host *
-          ServerAliveInterval 300
+    $ Host *
+        ServerAliveInterval 300
     ```
 
 -   Save this file as **config** under
@@ -261,8 +261,8 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
     change this value accordingly.
 
     ``` {.bash}
-       $ Host *
-          ServerAliveInterval 300
+    $ Host *
+        ServerAliveInterval 300
     ```
 
 -   Save this file as **config** under `~/.ssh/config`.

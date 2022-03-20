@@ -14,7 +14,7 @@ pagination_prev : null
 Users can use the `stat` command to get the detailed status of a file. For example, if a user has a file called `example.txt`, then the `stat` command can be invoked as
 
 ``` {.bash}
-   $ stat example.txt
+$ stat example.txt
 ```
 
 The output will be:
@@ -36,7 +36,7 @@ Change: 2020-08-18 23:21:06.000000000 +0530
 The file deletion date of a file can be obtained using the command `date`. For example, if we want to know the deletion date of the file `example.txt`, please type the following command 
 
 ``` {.bash}
-   $ date -d "2020-08-18 23:21:06.000000000 +0530 +15days"
+$ date -d "2020-08-18 23:21:06.000000000 +0530 +15days"
 ```
 
 Here, `2020-08-18 23:21:06.000000000 +0530` is the access time of the file, obtained using the `stat` command as shown earlier. Since the files stores in `$SCRATCH` are automatically deleted after $15$ days from its last modification, we need to add `+15days` to the access time. The output of the above command will be:
@@ -50,7 +50,7 @@ Wed Sep  2 23:21:06 IST 2020
 Alternatively, users can use the `usertools` command to get the access time and also the time left before deletion with one single command. Please note that `usertools` is **not** a standard linux command but developed by us to obtain the status of files with ease.
 
 ``` {.bash}
-   $ usertools file access example.txt
+$ usertools file access example.txt
 ```
 
 ``` {.bash}
@@ -64,25 +64,25 @@ Time Left: 359 hours 59 minutes 52 seconds.
 Users of Linux, Windows 10 (1803 and above) and macOS can copy files using `scp` utility. The following commands illustrate copying a file `example.txt` and a directory `test` from a user's personal machine to the HPC facility.
 
 ``` {.bash}
-   $ scp example.txt <user>@hpc.bits-hyderabad.ac.in:
+$ scp example.txt <user>@hpc.bits-hyderabad.ac.in:
 ```
 
 Here `<user>` is the `username` of the account to access the facility. Please note the **:** (colon) after the domain name. By default, if no path is specified after the colon, the file is copied into the `$HOME` directory of the user. Similarly, to copy a directory, `-r` flag is used along with `scp`.
 
 ``` {.bash}
-   $ scp -r test <user>@hpc.bits-hyderabad.ac.in:
+$ scp -r test <user>@hpc.bits-hyderabad.ac.in:
 ```
 
 Alternatively, the above two commands can be merged into a single command.
 
 ``` {.bash}
-   $ scp -r example.txt test <user>@hpc.bits-hyderabad.ac.in:
+$ scp -r example.txt test <user>@hpc.bits-hyderabad.ac.in:
 ```
 
 Users of `macOS` and `Linux` can use the `rsync` utility, which offers faster resumable transfers.
 
 ``` {.bash}
-   $ rsync -avz --progress test <user>@hpc.bits-hyderabad.ac.in:
+$ rsync -avz --progress test <user>@hpc.bits-hyderabad.ac.in:
 ```
 
 Here,
@@ -102,11 +102,11 @@ Here,
 Users can copy a file or directory from the HPC cluster to their machine by using the `scp` command. For example, if a user wishes to transfer a file `example.txt` and a directory `test` stored in `\home\<user>\result` directory, then the following commands can be used.
 
 ``` {.bash}
-   $ scp <user>@hpc.bits-hyderabad.ac.in:\home\<user>\result\example.txt .
+$ scp <user>@hpc.bits-hyderabad.ac.in:\home\<user>\result\example.txt .
 ```
 
 ``` {.bash}
-   $ scp -r <user>@hpc.bits-hyderabad.ac.in:\home\<user>\result\test .
+$ scp -r <user>@hpc.bits-hyderabad.ac.in:\home\<user>\result\test .
 ```
 
 Here `<user>` is the `username` of the account to access the facility. Please note the **.** (dot symbol) at the end of the command. The above commands copy `example.txt` and `test` into the current directory of the user's terminal on their local machine. For more information on `scp` and `rsync`, users can refer to the `manpages` for the utilities. The manual pages of these commands can be accessed using `man scp` and `man rsync`.

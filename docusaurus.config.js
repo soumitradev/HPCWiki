@@ -34,13 +34,13 @@ const config = {
       navbar: {
         title: '',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Sharanga Logo',
           src: 'img/sharanga.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'sharanga/sharanga',
             position: 'left',
             label: 'Docs',
           },
@@ -54,7 +54,7 @@ const config = {
             items: [
               {
                 label: 'Docs',
-                to: '/docs/intro',
+                to: '/docs/sharanga/',
               },
             ],
           },
@@ -63,7 +63,7 @@ const config = {
             items: [
               {
                 label: 'E-Mail',
-                href: 'hpc@hyderabad.bits-pilani.ac.in',
+                href: 'mailto:hpc@hyderabad.bits-pilani.ac.in',
               },
             ],
           },
