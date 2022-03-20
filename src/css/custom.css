@@ -62,7 +62,7 @@
 
  @font-face {
         font-family: 'Samarkan';
-        src: url('../../static/fonts/samarkan.ttf') format('ttf'),
+        src: url('../../static/fonts/samarkan.ttf') format('ttf');
         font-weight: normal;
         font-style: normal;
 }
