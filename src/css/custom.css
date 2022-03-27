@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #991D1D;
+  --ifm-color-primary: #8c1515;
   --ifm-color-primary-dark: #506A7A;
   --ifm-color-primary-darker: #234154;
   --ifm-color-primary-darkest: #102938;
@@ -15,6 +15,7 @@
   --ifm-color-primary-lightest: #DEA2A2;
   --ifm-code-font-size: 90%;
   --ifm-link-color: var(--ifm-color-primary-darker);
+  --ifm-menu-color : #000000;
   --ifm-menu-color-active : var(--ifm-color-primary-darker):
   --ifm-navbar-link-active-color: var(--ifm-color-primary-darker);
   --ifm-navbar-link-hover-color: var(--ifm-color-primary-darker);
@@ -23,7 +24,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #991D1D;
+  --ifm-color-primary: #8c1515; /*#991D1D;*/
   --ifm-color-primary-dark: #506A7A;
   --ifm-color-primary-darker: #234154;
   --ifm-color-primary-darkest: #102938;
@@ -31,6 +32,7 @@
   --ifm-color-primary-lighter: #577E96;
   --ifm-color-primary-lightest: #8CBEDE;
   --ifm-link-color: var(--ifm-color-primary-lighter);
+  --ifm-menu-color : #FFFFFF;
   --ifm-menu-color-active : var(--ifm-color-primary-lighter):
   --ifm-navbar-link-active-color: var(--ifm-color-primary-lighter);
   --ifm-navbar-link-hover-color: var(--ifm-color-primary-lighter);
