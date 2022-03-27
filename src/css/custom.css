@@ -6,7 +6,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #C26E6E;
+  --ifm-color-primary: #991D1D;
   --ifm-color-primary-dark: #506A7A;
   --ifm-color-primary-darker: #234154;
   --ifm-color-primary-darkest: #102938;
@@ -23,7 +23,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #C26E6E;
+  --ifm-color-primary: #991D1D;
   --ifm-color-primary-dark: #506A7A;
   --ifm-color-primary-darker: #234154;
   --ifm-color-primary-darkest: #102938;
@@ -52,9 +52,15 @@
 :root {
   --ifm-font-family-base: 'Open Sans';
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+:root {
+  --ifm-font-family-base: 'Roboto';
+}
 .navbar .navbar__items {
   flex: auto;
 }
+
+
 /* Header Dropdown Menu */
 .dropdown__link {
   font-size: inherit;
@@ -91,4 +97,12 @@ div[class^='announcementBarContent'] a:hover {
 
 .post-content p {
     text-align: justify;
+}
+
+[class^=h1Heading] {
+    font-size: 2rem;
+}
+
+[class^=h2Heading] {
+    font-size: 1rem;
 }

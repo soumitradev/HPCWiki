@@ -6,14 +6,14 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'HPC at Sharanga',
-  tagline: 'A guide to High Performance Computing and Frequently Asked Questions for the cluster',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Sharanga',
+  tagline: 'A guide to High Performance Computing and Frequently Asked Questions',
+  url: 'https://sharanga.hpc.bits-hyderabad.ac.in/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
+  organizationName: 'sharanga-hpc', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
 
   presets: [
@@ -50,10 +50,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'BITS Pilani Hyderabad Campus',
             items: [
               {
-                label: 'Docs',
+                label: 'BITS Pilani Hyderabad Campus, \n Hyderabad, Telangana - 500078',
                 to: '/docs/sharanga/',
               },
             ],
@@ -68,11 +68,11 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Address',
             items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/TheOriginalSoni/HPCWiki',
+                label: 'H009, \n Mathematics Department, \n BITS Pilani Hyderabad Campus, \n Hyderabad, Telangana - 500078',
+                href: 'https://github.com/sharanga-hpc/HPCWiki',
               },
             ],
           },
