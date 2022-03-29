@@ -27,7 +27,7 @@ It is well-known that the browser applications consume a lot of system memory an
 
 Similar to the browser applications, GUI applications (like gnuplot) too consume a lot of memory. Under heavy load, these applications may result in out of memory and disconnection logs. Therefore, we have disabled GUI on the cluster.
 
-### While executing a command, I am getting the error "undefined symbol: EVP\_KDF\_ctrl, version OPENSSL\_1\_1\_1b\".
+### While executing a command, I am getting the error "undefined symbol: EVP\_KDF\_ctrl, version OPENSSL\_1\_1\_1b".
 
 To resolve this issue, please type, `spack unload openssl` in the terminal.
 

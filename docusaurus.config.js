@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sharanga',
-  tagline: 'A guide to High Performance Computing and Frequently Asked Questions',
+  tagline: 'The High Performance Computing Cluster of BITS Pilani.',
   url: 'https://sharanga.hpc.bits-hyderabad.ac.in/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -27,6 +27,14 @@ const config = {
       }),
     ],
   ],
+    plugins: [
+      [
+        require.resolve("@cmfcmf/docusaurus-search-local"),
+        {
+          // Options here
+        },
+      ],
+    ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -50,16 +58,16 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Institute',
+            title: 'BITS Pilani Hyderabad Campus',
             items: [
               {
-                label: 'BITS Pilani Hyderabad Campus, \n Hyderabad, Telangana - 500078',
-                to: '/docs/sharanga/',
+                label: 'Hyderabad, Telangana - 500078',
+                to: '#',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Contact Us',
             items: [
               {
                 label: 'E-Mail',
@@ -67,17 +75,8 @@ const config = {
               },
             ],
           },
-          {
-            title: 'Address',
-            items: [
-              {
-                label: 'H009, \n BITS Pilani Hyderabad Campus, \n Hyderabad, Telangana - 500078',
-                href: 'https://github.com/sharanga-hpc/HPCWiki',
-              },
-            ],
-          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

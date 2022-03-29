@@ -6,7 +6,7 @@ pagination_next : null
 pagination_prev : null
 ---
 
-# HPC at Sharanga
+### HPC at Sharanga
 
 - [**Login and Accounts**](login.md)
 - [**Files and Directories**](files.md)

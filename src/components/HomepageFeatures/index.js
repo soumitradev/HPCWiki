@@ -3,15 +3,15 @@ import clsx from 'clsx';
 import styles from './styles.module.css';
 
 const FeatureList = [
-  {
-    title: 'Easy to Understand',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-    description: (
-      <>
-        The tutorial will go through the basics of HPC and troubleshooting common issues.
-      </>
-    ),
-  },
+  // {
+  //   title: 'Easy to Understasdfdsfsdfnd',
+  //   Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+  //   description: (
+  //     <>
+  //       The tutorial will go through the basics of HPC and troubleshooting common issues.
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({Svg, title, description}) {

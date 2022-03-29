@@ -24,7 +24,7 @@
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #8c1515; /*#991D1D;*/
+  --ifm-color-primary: #b64b4b; /*#991D1D;*/
   --ifm-color-primary-dark: #506A7A;
   --ifm-color-primary-darker: #234154;
   --ifm-color-primary-darkest: #102938;
@@ -70,7 +70,7 @@
 
  @font-face {
         font-family: 'Samarkan';
-        src: url('../../static/fonts/samarkan.ttf') format('ttf');
+        src: url('../../static/fonts/samarkan.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
 }
@@ -101,10 +101,31 @@ div[class^='announcementBarContent'] a:hover {
     text-align: justify;
 }
 
-[class^=h1Heading] {
-    font-size: 2rem;
+h2 {
+    font-size: 1.80rem;
 }
 
-[class^=h2Heading] {
-    font-size: 1rem;
+h3 {
+    font-size: 1.50rem;
+}
+
+/**[class^=anchor] {
+    font-size: 1.50rem;
+}*/
+
+p {
+    font-size: 1.15rem;
+    text-align: justify;
+}
+
+ [class^=hero__title] {
+        font-family: 'Samarkan';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 5rem;
+}
+
+[class^=hero__subtitle] {
+  font-size: 1.3rem;
+  text-align: center;
 }
