@@ -1,0 +1,22 @@
+name: Docusaurus Deployment
+on: [push]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Perform Checkout
+      uses: actions/checkout@v3
+    - name: Install dependencies
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+        check-latest: true
+    - run: npm install
+    - run: npm run build
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./build
+        publish_branch: docs
