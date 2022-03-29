@@ -50,7 +50,7 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'BITS Pilani Hyderabad Campus',
+            title: 'Institute',
             items: [
               {
                 label: 'BITS Pilani Hyderabad Campus, \n Hyderabad, Telangana - 500078',
@@ -71,7 +71,7 @@ const config = {
             title: 'Address',
             items: [
               {
-                label: 'H009, \n Mathematics Department, \n BITS Pilani Hyderabad Campus, \n Hyderabad, Telangana - 500078',
+                label: 'H009, \n BITS Pilani Hyderabad Campus, \n Hyderabad, Telangana - 500078',
                 href: 'https://github.com/sharanga-hpc/HPCWiki',
               },
             ],

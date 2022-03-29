@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        The tutorial will go through the basics of all the things that are basic and require basic understanding.
+        The tutorial will go through the basics of HPC and troubleshooting common issues.
       </>
     ),
   },
