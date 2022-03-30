@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sharanga',
-  tagline: 'The High Performance Computing Cluster of BITS Pilani.',
+  tagline: 'The High Performance Computing Cluster at BITS Pilani Hyderabad Campus.',
   url: 'https://sharanga.hpc.bits-hyderabad.ac.in/',
   baseUrl: '/',
   onBrokenLinks: 'throw',

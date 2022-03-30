@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: "Login and Accounts"
+sidebar_label: "Login"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null
@@ -19,8 +19,7 @@ Users are recommended to use PuTTY to access SSH in Windows. The installer for P
 
 -   Once installation is complete, go to
     `Start Menu -> All Programs -> PuTTYgen` and then launch the
-    application. Figure [1](#PuTTY-gen){reference-type="ref"
-    reference="PuTTY-gen"} shows the screenshot of the launched
+    application. Figure below shows the screenshot of the launched
     application.
 
 -   For the type of key to generate, please select RSA and click
@@ -62,8 +61,7 @@ Microsoft, from **Windows 10** build **1803** and onwards have shipped OpenSSH C
 -   Once the process is completed, two files will be generated along
     with the `SHA256` fingerprint. The key's random art image will also
     be displayed on-screen. A sample screenshot is shown in Figure
-    [2](#windows-key-art){reference-type="ref"
-    reference="windows-key-art"}. Note that the generated image and
+    below. Note that the generated image and
     fingerprint will differ from system to system.
 
 -   Please share the public key with the system administrator, who will
@@ -87,8 +85,7 @@ Users are recommended to use the `Terminal` application to generate ssh key pair
 -   Once the process is completed, two files will be generated along
     with the `SHA256` fingerprint. The key's random art image will be
     displayed on-screen. A sample screenshot generated on a mac system
-    is shown in Figure [3](#macOS-key){reference-type="ref"
-    reference="macOS-key"}. Note that the generated image and
+    is shown in Figure below. Note that the generated image and
     fingerprint will differ from system to system.
 
 -   Please share the public key with the system administrator, who will
@@ -111,8 +108,7 @@ To generate `ssh` keys on a Linux based operating system,
 -   Once the process is completed, two files will be generated along
     with the `SHA256` fingerprint. The key's random art image will also
     be displayed on-screen. A sample screenshot generated on a linux
-    system is shown in Figure [4](#Linux-key){reference-type="ref"
-    reference="Linux-key"}. Note that the generated image and
+    system is shown in Figure below. Note that the generated image and
     fingerprint will differ from system to system.
 
 -   Please share the public key with the system administrator, who will
@@ -221,7 +217,7 @@ Users can add multiple SSH keys into their `authorized_keys` file of the HPC fac
 
 Note: You are requested to copy the **public** key of the key pair and not the **private** key. Public key can be identified easily with the **.pub** file extension at the end of the the filename. For example `id_rsa.pub` refers to the public key and `id_rsa` refers to the private key.
 
-### My ssh connection disconnects with "Write failed: Broken pipe\".
+### My ssh connection disconnects with "Write failed: Broken pipe".
 
 By default `ssh` enforces a maximum idle time after last input from user. This is a security precaution to protect the account from unauthorized access. A user can override this setting by configuring the `KeepAlive` directive, as explained below.
 

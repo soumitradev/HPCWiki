@@ -6,11 +6,11 @@ pagination_next : null
 pagination_prev : null
 ---
 
-### HPC at Sharanga
+### FAQ on Sharanga
 
-- [**Login and Accounts**](login.md)
+- [**Login**](login.md)
 - [**Files and Directories**](files.md)
-- [**Storage Space**](storage.md)
+- [**Accounts**](accounts.md)
 - [**Job Scheduling**](jobs/)
 - [**Package Management**](package/)
 - [**Miscellaneous**](misc.md)

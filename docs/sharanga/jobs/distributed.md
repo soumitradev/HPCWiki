@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: "Distributed Memory CPU Parallel Job"
+sidebar_label: "Distributed Memory CPU Parallel Jobs"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null

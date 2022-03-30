@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: "Shared Memory CPU Parallel Job"
+sidebar_label: "Shared Memory CPU Parallel Jobs"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null

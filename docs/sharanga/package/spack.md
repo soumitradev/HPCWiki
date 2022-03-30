@@ -1,6 +1,6 @@
 ---
 sidebar_position: 3
-sidebar_label: "Package Management with Spack"
+sidebar_label: "With Spack"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null
@@ -64,6 +64,6 @@ Users can use the following command to find the list of currently loaded package
 
 Users can type `spack find <package name>` to find the version of the package installed. Note that the package version is shown after `@` in the output.
 
-### After submitting a job, I am getting messages like "spack: command not found\". Why am I getting this message? 
+### After submitting a job, I am getting messages like "spack: command not found". Why am I getting this message? 
 
 Spack is sourced by the default shell `/bin/bash`. You may get this message if you have changed the shell to something other than `bash`. We request you to change the shell back to `bash` for optimal functioning. Users can use the `chsh` shell command to change their user shell environment back to `bash`. Another reason could be due to the unavailability of the desired package.

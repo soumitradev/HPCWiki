@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-sidebar_label: "Package Management with ModuleFiles"
+sidebar_label: "With ModuleFiles"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null
@@ -76,6 +76,6 @@ Note that the user may get additional information about the package by using the
 $ module help <package name>
 ```
 
-### After submitting a job, I am getting messages like "module: command not found\". Why am I getting this message?
+### After submitting a job, I am getting messages like "module: command not found". Why am I getting this message?
 
 Modulefiles are by default sourced by the default shell `/bin/bash`. You may get this message if you have changed the shell to something other than `bash`. We request you to change the shell back to `bash` for optimal functioning. Users can use the `chsh` shell command to change their user shell environment back to `bash`. Another reason could be due to the unavailability of the desired package.
