@@ -12,9 +12,9 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   organizationName: 'sharanga-hpc', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  projectName: 'HPCWiki', // Usually your repo name.
 
   presets: [
     [
@@ -93,8 +93,15 @@ const config = {
                 },
               },
             ],
-          },
+          },          
         ],
+        logo: {
+          alt: 'BITS Pilani',
+          src: 'img/BITS_Pilani-Logo.svg',
+          href: 'https://www.bits-pilani.ac.in/hyderabad/',
+          width: 100,
+          height: 100,
+        },
         // copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
       },
       prism: {
