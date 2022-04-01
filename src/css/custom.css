@@ -20,6 +20,9 @@
   --ifm-navbar-link-active-color: var(--ifm-color-primary-darker);
   --ifm-navbar-link-hover-color: var(--ifm-color-primary-darker);
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker);
+  --ifm-color-gray-300: transparent;
+  --ifm-color-gray-700: transparent;
+  --ifm-footer-background-color: #f2f2f2;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -119,7 +122,7 @@ p {
 }
 
  [class^=hero__title] {
-        font-family: 'Samarkan';
+        /* font-family: 'Samarkan'; */
         font-weight: normal;
         font-style: normal;
         font-size: 5rem;

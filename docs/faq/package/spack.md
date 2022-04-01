@@ -13,7 +13,7 @@ pagination_prev : null
 
 Users can use the `spack` command to view the list of installed packages.
 
-``` {.bash}
+```bash
   $ spack find
   ==> 45 installed packages
 -- linux-centos8-broadwell / gcc@7.4.0 --------------------------
@@ -36,19 +36,19 @@ Note that the above list is for representational purpose and differs from the ac
 
 Users can use the `spack load` command to load the package into their current environment. For example a user who wishes to use `PETSc` library can use the following syntax.
 
-``` {.bash}
+```bash
   $ spack load petsc
 ```
 
 If a user wishes to unload the `PETSc` library from their environment, they can use the `spack unload` command.
 
-``` {.bash}
+```bash
   $ spack unload petsc
 ```
 
 If a user wishes to unload all the loaded libraries from their user environment, please use the following command.
 
-``` {.bash}
+```bash
   $ spack unload
 ```
 
@@ -56,7 +56,7 @@ If a user wishes to unload all the loaded libraries from their user environment,
 
 Users can use the following command to find the list of currently loaded packages.
 
-``` {.bash}
+```bash
   $ spack find --loaded
 ```
 

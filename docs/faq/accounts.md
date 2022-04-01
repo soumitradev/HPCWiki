@@ -17,11 +17,11 @@ Users are provided with 40GiB of storage space in their `$HOME` directory and un
 
 Users are provided with 40GiB of storage quota for their home directories. Details on the quota can be obtained using the command `usertools`.
 
-``` {.bash}
+```bash
 $ usertools quota info
 ```
 
-``` {.bash}
+```bash
 Username: nischay
 Quota Exceeded: No
 Total Storage Alloted: 40 GiB
@@ -37,19 +37,19 @@ To ensure fair share of storage resources on the HPC facility, users have limite
 
 The `du` command lists the size of files/folders.
 
-``` {.bash}
+```bash
 $ du
 ```
 
 For example, if we want to view the top $20$ files and directories occupying the most space in `$HOME` directory, then type the following command:
 
-``` {.bash}
+```bash
 $ du -ah ~/ 2>/dev/null | sort -n -r | head -n 20
 ```
 
 However, some softwares and libraries create hidden directories in the home directory. To see their data usage, you can run the following command:
 
-``` {.bash}
+```bash
 $ du -sh ~/.??*
 ```
 

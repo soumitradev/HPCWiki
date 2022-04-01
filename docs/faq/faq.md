@@ -8,9 +8,9 @@ pagination_prev : null
 
 ### FAQ on Sharanga
 
+- [**Accounts**](accounts.md)
 - [**Login**](login.md)
 - [**Files and Directories**](files.md)
-- [**Accounts**](accounts.md)
 - [**Job Scheduling**](jobs/)
 - [**Package Management**](package/)
 - [**Miscellaneous**](misc.md)

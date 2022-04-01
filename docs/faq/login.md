@@ -240,7 +240,7 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
 -   Type the following text without the `$` symbol. Example shown is for
     300 seconds and users can change this value accordingly.
 
-    ``` {.bash}
+    ```bash
     $ Host *
         ServerAliveInterval 300
     ```
@@ -256,7 +256,7 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
     the `$` symbol. Example shown is for 300 seconds and users can
     change this value accordingly.
 
-    ``` {.bash}
+    ```bash
     $ Host *
         ServerAliveInterval 300
     ```

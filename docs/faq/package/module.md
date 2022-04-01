@@ -13,7 +13,7 @@ pagination_prev : null
 
 On Sharanga, users can use the following command to view the list of installed packages (with the versions).
 
-``` {.bash}
+```bash
 $ module avail
 --------------------------------- /share/module-------------------------------
    2brad_denovo/2019-01-22_giteec5016            meshclust2/2.1.0
@@ -38,19 +38,19 @@ $ module avail
 
 Users can use the `module load` command to load a package into their current environment. For example, a user who wishes to use `PETSc` library can use the following syntax.
 
-``` {.bash}
+```bash
 $ module load petsc
 ```
 
 If a user wishes to unload the `PETSc` library from their user environment, they can use the `module rm` command.
 
-``` {.bash}
+```bash
 $ module rm petsc
 ```
 
 If a user wishes to unload all the loaded libraries from their user environment, then they can use the following command.
 
-``` {.bash}
+```bash
 $ module purge
 ```
 
@@ -58,7 +58,7 @@ $ module purge
 
 Users can use the following command to find the list of currently loaded modules.
 
-``` {.bash}
+```bash
 $ module list
 ```
 
@@ -66,13 +66,13 @@ $ module list
 
 Users can type the following command to find the version of the installed package.
 
-``` {.bash}
+```bash
 $ module spider <package name>
 ```
 
 Note that the user may get additional information about the package by using the following command
 
-``` {.bash}
+```bash
 $ module help <package name>
 ```
 

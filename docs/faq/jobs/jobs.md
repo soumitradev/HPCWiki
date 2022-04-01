@@ -37,13 +37,13 @@ Documentation](https://slurm.schedmd.com/documentation.html).
 
 Users can use the `sinfo` command to view the status of partitions and nodes.
 
-``` {.bash}
+```bash
 $ sinfo
 ```
 
 Alternatively, users can run `scontrol show partition` to know about partitions and their limits.
 
-``` {.bash}
+```bash
 $ scontrol show partition
 ```
 
@@ -51,13 +51,13 @@ $ scontrol show partition
 
 To view all the current jobs of a user, please type the following command.
 
-``` {.bash}
+```bash
 $ squeue -u <username>
 ```
 
 To view all the running jobs of a user, please type
 
-``` {.bash}
+```bash
 $ squeue -u <username> -t RUNNING
 ```
 
@@ -65,25 +65,25 @@ $ squeue -u <username> -t RUNNING
 
 To cancel a particular job by its `jobid`, use the following command.
 
-``` {.bash}
+```bash
 $ scancel <jobid>
 ```
 
 To cancel a job by its name, please type
 
-``` {.bash}
+```bash
 $ scancel --name <jobname>
 ```
 
 To cancel all the jobs of a user
 
-``` {.bash}
+```bash
 $ scancel -u <username>
 ```
 
 To cancel all the `PENDING` jobs of a user
 
-``` {.bash}
+```bash
 $ scancel -t PENDING -u <username>
 ```
 
@@ -91,19 +91,19 @@ $ scancel -t PENDING -u <username>
 
 To hold a job from being scheduled
 
-``` {.bash}
+```bash
 $ scontrol hold <jobid>
 ```
 
 To release a job to be scheduled
 
-``` {.bash}
+```bash
 $ scontrol release <jobid>
 ```
 
 To requeue (cancel or rerun) a job
 
-``` {.bash}
+```bash
 $ scontrol requeue <jobid>
 ```
 
@@ -122,13 +122,13 @@ Please note that by default `sbatch` does not write the output logs. The example
 
 For example, if a user has a job with the job id $121$, and would like to view the job output, then use the following syntax.
 
-``` {.bash}
+```bash
 $ tail -f slurm.121.out
 ```
 
 Alternatively, users can use `vi` or `nano` to view the output file after the job is completed.
 
-``` {.bash}
+```bash
 $ vi slurm.121.out
 $ nano slurm.121.out
 ```
@@ -137,7 +137,7 @@ $ nano slurm.121.out
 
 Yes, the facility provides users access to interactive job scheduling. Users can use the `srun` command to setup an interactive session on the nodes. Consider an example where a user wants to request 2 nodes with 64 cores per node.
 
-``` {.bash}
+```bash
 $ srun -N 2 -n 1 -c 128 -p compute --pty bash -i
 ```
 
@@ -151,7 +151,7 @@ No, you cannot execute job scripts written for other job schedulers using Slurm.
 
 To get an estimate of when your job is going to start, users can use the `squeue` command.
 
-``` {.bash}
+```bash
 $ squeue --start -j <jobid>
 ```
 
@@ -161,7 +161,7 @@ Please note that your job might run before the scheduled start time as jobs that
 
 There are several reasons why your job is not running. Users can run the `squeue` command to get the status and reason.
 
-``` {.bash}
+```bash
 $ squeue -j <jobid> -l
 ```
 

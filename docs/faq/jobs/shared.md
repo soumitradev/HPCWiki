@@ -36,13 +36,13 @@ Users can use the `sbatch` command provided by Slurm to submit a job script. Not
 
 To submit the above job script use the following command.
 
-``` {.bash}
+```bash
 $ sbatch job.sh
 ```
 
 If you wish to test your job script and want to find when it is estimated to run, please run
 
-``` {.bash}
+```bash
 $ sbatch --test-only job.sh
 ```
 
@@ -169,13 +169,13 @@ Finally, we are using `srun` to start the execution of the application. This is 
 
 To submit the above job script use the following command.
 
-``` {.bash}
+```bash
 $ sbatch job.sh
 ```
 
 If you wish to test your job script and want to find when it is estimated to run, please run
 
-``` {.bash}
+```bash
 $ sbatch --test-only job.sh
 ```
 

@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Sharanga',
-  tagline: 'The High Performance Computing Cluster at BITS Pilani Hyderabad Campus.',
+  tagline: 'The High Performance Computing Cluster at BITS Pilani Hyderabad Campus',
   url: 'https://sharanga.hpc.bits-hyderabad.ac.in/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -45,38 +45,57 @@ const config = {
           alt: 'Sharanga Logo',
           src: 'img/sharanga.svg',
         },
-        items: [
+        items:[
           {
             type: 'doc',
-            docId: 'sharanga/sharanga',
-            position: 'left',
-            label: 'Docs',
+            docId: 'configuration/configuration',
+            position: 'right',
+            label: 'Configuration',
           },
+          {
+            type: 'doc',
+            docId: 'usage/usage',
+            position: 'right',
+            label: 'Usage Policy',
+          },
+          {
+            type: 'doc',
+            docId: 'software/software',
+            position: 'right',
+            label: 'Software',
+          },
+          {
+            type: 'doc',
+            docId: 'faq/faq',
+            position: 'right',
+            label: 'FAQs',
+          },
+          {
+            type: 'doc',
+            docId: 'contact/contact',
+            position: 'right',
+            label: 'Contact Us',
+          }
         ],
       },
       footer: {
         style: 'dark',
         links: [
           {
-            title: 'BITS Pilani Hyderabad Campus',
+            title: 'BITS Pilani',
             items: [
               {
-                label: 'Hyderabad, Telangana - 500078',
+                label: 'Hyderabad Campus',
                 to: '#',
-              },
-            ],
-          },
-          {
-            title: 'Contact Us',
-            items: [
-              {
-                label: 'E-Mail',
-                href: 'mailto:hpc@hyderabad.bits-pilani.ac.in',
+                logo: {
+                  alt: 'BITS Logo',
+                  src: 'img/BITS_Pilani-Logo.svg',
+                },
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
+        // copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

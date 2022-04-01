@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: "Package Management"
+sidebar_label: "Packages"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null
