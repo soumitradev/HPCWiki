@@ -53,12 +53,13 @@
 }
 
 html[data-theme='dark'] footer {
-  background-color: #696969;
+  background-color: #242424;
 }
 
 html[data-theme='light'] footer {
-  background-color: #696969;
+  background-color: #242424;
 }
+
 
 /**@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 :root {
@@ -113,10 +114,13 @@ div[class^='announcementBarContent'] a:hover {
 
 h2 {
     font-size: 1.80rem;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: #c85555;
 }
 
 h3 {
-    font-size: 1.50rem;
+    font-size: 1.4rem;
 }
 
 /**[class^=anchor] {
@@ -129,8 +133,8 @@ p {
 }
 
  [class^=hero__title] {
-        font-family: 'Samarkan';
-        font-weight: normal;
+        /*font-family: 'Anton';*/
+        font-weight: lighter;
         font-style: normal;
         font-size: 5rem;
 }

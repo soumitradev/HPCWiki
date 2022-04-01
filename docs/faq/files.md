@@ -9,6 +9,7 @@ pagination_prev : null
 
 ## Files and Directories
 
+
 ### How to find the last modification date of a file?
 
 Users can use the `stat` command to get the detailed status of a file. For example, if a user has a file called `example.txt`, then the `stat` command can be invoked as
@@ -111,11 +112,11 @@ $ scp -r <user>@hpc.bits-hyderabad.ac.in:\home\<user>\result\test .
 
 Here `<user>` is the `username` of the account to access the facility. Please note the **.** (dot symbol) at the end of the command. The above commands copy `example.txt` and `test` into the current directory of the user's terminal on their local machine. For more information on `scp` and `rsync`, users can refer to the `manpages` for the utilities. The manual pages of these commands can be accessed using `man scp` and `man rsync`.
 
-### How to access my \$HOME directory? 
+### How to access my $HOME directory? 
 
 Users can access their `$HOME` directory by typing `cd $HOME` in a terminal on Sharanga. Note that the home directory of a user is accessible only to that particular user and cannot be viewed or accessed by others in the cluster.
 
-### How to access my \$SCRATCH space? 
+### How to access my $SCRATCH space? 
 
 Users can access their `$SCRATCH` space by typing `cd $SCRATCH` in a terminal on Sharanga. Note that the scratch space of a user is accessible only to that particular user and cannot be viewed or accessed by others in the cluster.
 

@@ -6,7 +6,9 @@ pagination_next : null
 pagination_prev : null
 ---
 
-### FAQ on Sharanga
+## Frequently Asked Questions on Sharanga
+
+These docs contain some common questions related to running code on the Sharanga HPC Cluster in BITS Pilani, Hyderabad Campus. For any further queries, please [contact us](../contact/contact.md).
 
 - [**Accounts**](accounts.md)
 - [**Login**](login.md)
