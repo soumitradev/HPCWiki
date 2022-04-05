@@ -9,51 +9,92 @@ pagination_prev : null
 
 ## Usage Policy
 
+### Introduction
+
+**Sharanga**, the high performance computing facility at the BITS Pilani, Hyderabad Campus was commissioned on 1st July 2020. This facility is strictly meant for research purposes. In the first phase, 10 compute nodes and 1 accelerator node are provisioned, thus supporting both CPU and GPU parallel computations. Additionally, it has 1 master node and 2 parallel file system nodes. In total, it has 640 cores for CPU parallel computations. Some of the specifications of the nodes are listed below.
+
+-   Compute node: It is based on AMD EPYC 7542 processor consisting of 2 * 32 cores and 256GB of RAM.
+
+-   Accelerator node: It is based on AMD EPYC 7542 processor consisting of 2 * 32 cores, 256GB of RAM and an NVIDIA Tesla V100 32GB accelerator card.
+
+-   Master node: It is based on AMD EPYC 7282 processor consisting of 2 * 16 cores and 256GB of RAM.
+
+-   PFS node: It is based on AMD EPYC 7252 processor consisting of 2 * 8 cores and 128GB of RAM. It provides 128 TBs of usable storage for `/home` and `/scratch` directories together.
+
+These nodes are interconnected using a high speed Mellanox EDR infiniband network with 100Gbps bandwidth.
+
 ### Access and user accounts
 
-Access to the machine through ssh keys. 
+-   To access the HPC facility, a valid user account and BITS email id is required.
 
+-   The computing facility can be accessed through `ssh`. However, for secured access, at the time of account creation, users have to provide the `ssh` public key of the machine that is being used to connect.
+
+-   User accounts are personal and therefore users are requested not to share their `ssh` keys as it may lead to unauthorised access.
+
+-   The user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account.
+
+-   All user accounts are non-transferable.
+
+-   Users can access the HPC facility through the public domain `hpc.bits-hyderabad.ac.in`. More details on accessing **Sharanga** are provided in the FAQs document.
+
+-   `root` access is prohibited to the users.
 
 ### Storage and data security
 
-Users are provisioned with 40GB of storage space in the /home directory. /home acts as a personal repository for the user data and is mounted across all nodes. Additional storage space may be provided upon request and valid justification.
+-   Users are provisioned with 40GB of storage space in the `/home` directory. `/home` acts as a personal repository for the user data and is mounted across all nodes. Additional storage space may be provided upon request and valid justification, subject to availability.
 
-Apart from the home directory, users are given unlimited storage space in scratch. Please note that scratch acts as a temporary storage location and files stored in it are purged automatically after 15 days following the last modifications.
+-   Apart from the `/home` directory, users are given unlimited storage space in `/scratch`. `/scratch` acts as a temporary storage location and files stored in it are purged automatically after 15 days following the last modifications. Please note that this deletion process is done by the system automatically.
 
-It is the responsibility of the users to secure their data by setting appropriate permissions to their files and directories.
+-   It is the responsibility of the users to secure their data by setting appropriate permissions to their files and directories.
 
 ### Backups
-Users’ home directories are backed up incrementally on a daily basis using Borg backup. Backups older than 30 days will be deleted automatically. Note that files stored in the scratch space are not backed. 
 
-Although Backups are stored locally, any untoward incident that affects the HPC facility may destroy both the primary and backup copies of the user files. Therefore, users are advised to take periodic backups of their files on their local machines. The HPC center cannot guarantee the safety of files stored on HPC resources.
+-   `/home` directory is backed up incrementally on a daily basis using Borg backup. Backups older than 30 days will be deleted automatically. Note that files stored in `/scratch` are not backed.
+
+-   Although Backups are stored locally, any untoward incident that affects the HPC facility may destroy both the primary and backup copies of the user files. The HPC center cannot guarantee the safety of the files stored on HPC resources.
+
+-   Users are advised to take backups at least once every 30 days.
 
 ### Account expiration and termination
 
-User accounts will expire when users leave the Institute or the accounts have been inactive for more than six months. Users leaving the institute will be given a period of 15 days to transfer all their files. Users of the accounts that are inactive for more than six months will be given a period of 15 days to transfer their files. Note that the user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account. Furthermore, all user accounts are non-transferable. 
+-   User accounts will expire when users leave the Institute or the accounts have been inactive for more than three months.
 
+-   Users leaving the institute will be given a period of 15 days to transfer all their files starting from the last working day at the institute.
+
+-   During this period, users can no longer submit their jobs.
+
+-   Users of the accounts that are inactive for more than three months will be given a period of 15 days to transfer their files.
+
+-   Note that the user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account.
 
 ### Job scheduling and resource allocation
-Users should use the login node for interactive access and transferring files. All compilation and job scheduling should be performed on the login node. However, users are not allowed to run their codes on the login node. 
 
-To submit jobs on the compute nodes, the HPC facility uses a job scheduler called Slurm Workload Manager. The job scheduler is responsible for managing jobs on the compute and accelerator nodes and returning job output to the user.
+-   Users should use the login node for interactive access and transferring files. All compilation and job scheduling should be performed on the login node. However, users are not allowed to run their codes on the login node.
 
-For running any job on the HPC facility, the job has to utilise a minimum of 4 cores. Jobs using a lower number of cores will not be accepted. Furthermore, submitted jobs should be in multiples of 4 up to a maximum of 640 cores.
+-   To submit jobs on the compute nodes, the HPC facility uses a job scheduler called Slurm Workload Manager. The job scheduler is responsible for managing jobs on the compute and accelerator nodes and returning the output to the user.
 
-To ensure fair usage of the computing resources, Slurm is configured in such a way 	that the maximum run time for any job on the HPC facility will not exceed 168 hours. 	Any job exceeding this limit will be terminated. Therefore, it is highly recommended to 	store the data at regular intervals using checkpoints.
+-   For running any job on the HPC facility, the job has to utilise a minimum of 4 cores. Jobs using a lower number of cores including serial codes will not be allowed to run. Furthermore, submitted jobs should be in multiples of 4 up to a maximum of 512 cores.
 
-While submitting jobs through Slurm, users have to specify the number of computing cores, required memory per node and run-time. Note that accurate job specifications will improve scheduling and result in jobs running sooner.
+-   To ensure fair usage of the computing resources, Slurm is configured in such a way that the maximum wall clock time based on CPU parallel codes will not exceed 168 hours. For job submissions on the GPU node, the maximum permissible wall clock time is restricted to 24 hours. Any job exceeding this limit will be terminated without notification. Therefore, it is highly recommended to store the data at regular intervals using checkpoints.
 
-Users are advised not to run experimental codes that might compromise the usability of the login and compute nodes, the network fabric, and the shared storage system. Jobs that are having an adverse effect on the HPC facility may be terminated with no prior notification.
+-   The HPC committee reserves the right to change the maximum allowed run time periodically.
 
-Users who desire to perform the scalability of the indigenous codes should contact the HPC team so that necessary resources can be allotted at a convenient time. 
+-   While submitting jobs through Slurm, users have to specify the number of computing cores, required memory per node and run-time. Note that accurate job specifications will improve scheduling and result in jobs running sooner.
+
+-   Users are advised not to run experimental codes that might compromise the usability of the login and compute nodes, the network fabric, and the shared storage system. Jobs that are having an adverse effect on the HPC facility will be terminated without prior notification.
+
+-   Users who desire to perform the scalability of the indigenous codes should contact the HPC team so that necessary resources can be allotted at a convenient time.
 
 ### Software support and maintenance
 
-All the relevant open source software packages are by default installed. However, if any user desires to have additional packages they are requested to contact the system administrator for the same.
+-   All the relevant open source software packages are by default installed. However, if any user desires to have additional packages they are requested to contact the system administrator through <hpc@hyderabad.bits-pilani.ac.in> for the same.
 
-Installation of commercial software on HPC facility must include a valid license. No software will be installed without prior proof of license eligibility.
+-   Installation of commercial software on HPC facility must include a valid license. No software will be installed without prior proof of license eligibility.
 
-For the purpose of security, performance, and stability, software will be updated periodically. However, some updates may require temporary downtime of the facility, which will be informed via relevant mailing list.
+-   Note that only the system administrator is authorised to install software or any other packages on the facility.
+
+-   For the purpose of security, performance, and stability, software will be updated periodically. However, some updates may require temporary downtime of the facility, which will be informed via relevant mailing list.
 
 ### Publications
-Any form of publications from the work done on the Institute HPC facility should be acknowledged. Details of the published papers acknowledging the HPC facility should be submitted.
+
+Any form of publications from the work done on the Institute HPC facility should be acknowledged. Details of the published papers acknowledging the HPC facility should be communicated to <hpc@hyderabad.bits-pilani.ac.in>.
