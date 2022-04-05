@@ -41,18 +41,6 @@ pagination_prev : null
 
 -   Users are advised to take backups at least once every 30 days.
 
-### Account expiration and termination
-
--   User accounts will expire when users leave the Institute or the accounts have been inactive for more than three months.
-
--   Users leaving the institute will be given a period of 15 days to transfer all their files starting from the last working day at the institute.
-
--   During this period, users can no longer submit their jobs.
-
--   Users of the accounts that are inactive for more than three months will be given a period of 15 days to transfer their files.
-
--   Note that the user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account.
-
 ### Job scheduling and resource allocation
 
 -   Users should use the login node for interactive access and transferring files. All compilation and job scheduling should be performed on the login node. However, users are not allowed to run their codes on the login node.
@@ -81,10 +69,20 @@ pagination_prev : null
 
 -   For the purpose of security, performance, and stability, software will be updated periodically. However, some updates may require temporary downtime of the facility, which will be informed via relevant mailing list.
 
+### Account expiration and termination
+
+-   User accounts will expire when users leave the Institute or the accounts have been inactive for more than three months.
+
+-   Users leaving the institute will be given a period of 15 days to transfer all their files starting from the last working day at the institute.
+
+-   During this period, users can no longer submit their jobs.
+
+-   Users of the accounts that are inactive for more than three months will be given a period of 15 days to transfer their files.
+
+-   Note that the user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account.
+
 ### Publications
 
-Any form of publications from the work done on the Institute HPC facility should be acknowledged. Details of the published papers acknowledging the HPC facility should be communicated to <hpc@hyderabad.bits-pilani.ac.in>.
+Any form of publications from the work done on the Institute HPC facility should be acknowledged. Details of the published papers acknowledging the HPC facility should be communicated to <hpc@hyderabad.bits-pilani.ac.in>. We request the users to kindly use the following text to acknowledge the HPC resources.
 
-We request the users to kindly use the following text to acknowledge the HPC resources.
-
-> The authors gratefully acknowledge the computing time provided on the high performance computing facility, Sharanga, at the Birla Institute of Technology and Science - Pilani, Hyderabad Campus.
+> *The authors gratefully acknowledge the computing time provided on the high performance computing facility, Sharanga, at the Birla Institute of Technology and Science - Pilani, Hyderabad Campus.*
