@@ -99,8 +99,6 @@ These nodes are interconnected using a high speed Mellanox EDR infiniband networ
 
 Any form of publications from the work done on the Institute HPC facility should be acknowledged. Details of the published papers acknowledging the HPC facility should be communicated to <hpc@hyderabad.bits-pilani.ac.in>.
 
-### How do I acknowledge the high performance computing facility in my presentations or publications?
-
 We request the users to kindly use the following text to acknowledge the HPC resources.
 
 > The authors gratefully acknowledge the computing time provided on the high performance computing facility, Sharanga, at the Birla Institute of Technology and Science - Pilani, Hyderabad Campus.
