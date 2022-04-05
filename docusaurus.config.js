@@ -24,7 +24,11 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
+        docs: {
+          sidebarPath: require.resolve('./sidebars.js'),
+        },
       }),
+      
     ],
   ],
     plugins: [
@@ -48,19 +52,19 @@ const config = {
         items:[
           {
             type: 'doc',
-            docId: 'configuration/configuration',
+            docId: 'misc_docs/configuration/configuration', 
             position: 'right',
             label: 'Configuration',
           },
           {
             type: 'doc',
-            docId: 'usage/usage',
+            docId: 'misc_docs/usage/usage',
             position: 'right',
             label: 'Usage Policy',
           },
           {
             type: 'doc',
-            docId: 'software/software',
+            docId: 'misc_docs/software/software',
             position: 'right',
             label: 'Software',
           },
@@ -72,7 +76,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'contact/contact',
+            docId: 'misc_docs/contact/contact',
             position: 'right',
             label: 'Contact Us',
           }
