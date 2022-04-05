@@ -39,7 +39,7 @@ export default function NotFound() {
                 <Translate
                   id="theme.NotFound.p2"
                   description="The 2nd paragraph of the 404 page">
-                  Please contact the HPC team and let them know the link is broken.
+                  If you think this is a mistake please contact the HPC team and let them know the link is broken.
                 </Translate>
               </p>
             </div>

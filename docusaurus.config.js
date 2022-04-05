@@ -26,6 +26,7 @@ const config = {
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          breadcrumbs: true,
         },
       }),
       
@@ -35,7 +36,7 @@ const config = {
       [
         require.resolve("@cmfcmf/docusaurus-search-local"),
         {
-          // Options here
+          style: undefined,
         },
       ],
     ],
