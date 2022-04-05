@@ -7,4 +7,6 @@ pagination_next : null
 pagination_prev : null
 ---
 
-# To be completed
+## Contact Us
+
+Please contact us at <hpc@hyderabad.bits-pilani.ac.in>.
