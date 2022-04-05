@@ -5,6 +5,7 @@ hide_title: true
 pagination_next : null
 pagination_prev : null
 sidebar_label: "FAQ"
+title: "Frequency Asked Questions"
 ---
 
 ## Frequently Asked Questions on Sharanga

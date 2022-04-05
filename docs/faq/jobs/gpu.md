@@ -5,6 +5,7 @@ hide_table_of_contents: true
 hide_title: true
 pagination_next : null
 pagination_prev : null
+title: "GPU"
 ---
 
 ## How to schedule a GPU parallel job on Slurm?

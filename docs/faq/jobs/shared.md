@@ -5,6 +5,7 @@ hide_table_of_contents: true
 hide_title: true
 pagination_next : null
 pagination_prev : null
+title: "Shared CPU"
 ---
 
 ## How to schedule a shared memory CPU parallel job on Slurm? 
