@@ -132,12 +132,17 @@ p {
     text-align: justify;
 }
 
- [class^=hero__title] {
+[class^=samarkan] {
+  font-family: 'Samarkan';
+}
+
+[class^=hero__title] {
         /*font-family: 'Anton';*/
         font-weight: lighter;
         font-style: normal;
         font-size: 5rem;
 }
+
 
 [class^=hero__subtitle] {
   font-size: 1.3rem;

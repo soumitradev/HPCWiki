@@ -9,8 +9,6 @@ pagination_prev : null
 
 ## Usage Policy
 
-### Introduction
-
 ### Access and user accounts
 
 -   To access the HPC facility, a valid user account and BITS email id is required.
