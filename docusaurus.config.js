@@ -29,17 +29,19 @@ const config = {
           breadcrumbs: true,
         },
       }),
-      
     ],
   ],
-    plugins: [
-      [
-        require.resolve("@cmfcmf/docusaurus-search-local"),
-        {
-          style: undefined,
-        },
-      ],
-    ],
+  plugins: [],
+  themes: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        hashed: true,
+        language: ["en"],
+        indexBlog: false,
+      },
+    ]
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -50,10 +52,9 @@ const config = {
           alt: 'Sharanga Logo',
           src: 'img/sharanga.svg',
         },
-        items:[
-          {
+        items: [{
             type: 'doc',
-            docId: 'misc_docs/configuration/configuration', 
+            docId: 'misc_docs/configuration/configuration',
             position: 'right',
             label: 'Configuration',
           },
@@ -85,21 +86,17 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'BITS Pilani',
-            items: [
-              {
-                label: 'Hyderabad Campus',
-                to: '#',
-                logo: {
-                  alt: 'BITS Logo',
-                  src: 'img/BITS_Pilani-Logo.svg',
-                },
-              },
-            ],
-          },          
-        ],
+        links: [{
+          title: 'BITS Pilani',
+          items: [{
+            label: 'Hyderabad Campus',
+            to: '#',
+            logo: {
+              alt: 'BITS Logo',
+              src: 'img/BITS_Pilani-Logo.svg',
+            },
+          }, ],
+        }, ],
         logo: {
           alt: 'BITS Pilani',
           src: 'img/BITS_Pilani-Logo.svg',
