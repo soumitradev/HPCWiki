@@ -190,3 +190,7 @@ html[data-theme='light'] .footer__title{
 html[data-theme='light'] .footer__link-item{
   color: #4b4b4b;
 }
+
+html[data-theme='light'] .footer__copyright{
+  color: #4b4b4b;
+}

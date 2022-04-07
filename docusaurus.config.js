@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: "Hyderabad Campus",
-                to: "https://www.bits-pilani.ac.in/hyderabad",
+                to: "https://sharanga.hpc.bits-hyderabad.ac.in/",
                 logo: {
                   alt: "BITS Logo",
                   src: "img/BITS_Pilani-Logo.svg",
@@ -107,11 +107,11 @@ const config = {
         logo: {
           alt: "BITS Pilani",
           src: "img/BITS_Pilani-Logo.svg",
-          href: "https://www.bits-pilani.ac.in/hyderabad/",
+          href: "https://sharanga.hpc.bits-hyderabad.ac.in/",
           width: 100,
           height: 100,
         },
-        // copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,

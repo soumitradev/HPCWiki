@@ -18,6 +18,7 @@ export default function FooterLayout({ style, links, logo, copyright }) {
           <div class="left-logo">{logo}</div>
           <div class="right-links">{links}</div>
         </div>
+        <div class="footer__bottom text--center">{copyright}</div>
       </div>
     </footer>
   );
