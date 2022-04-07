@@ -30,8 +30,8 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <Highlight
-          title="What is it?"
-          content="Sharanga is the high performance computing facility at the BITS Pilani, Hyderabad Campus. This facility is strictly meant for research purposes."
+          title=""
+          content="Sharanga is the high performance computing facility at the BITS Pilani - Hyderabad Campus. This facility is meant for research purposes. It is a heterogeneous system consisting of 22 compute nodes and 4 accelerator nodes, supporting CPU and GPU parallel computations. The total computing power in terms of Rpeak is around 190 Teraflops."
         />
       </main>
     </Layout>
