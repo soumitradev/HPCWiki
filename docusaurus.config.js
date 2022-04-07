@@ -87,32 +87,32 @@ const config = {
           },
         ],
       },
-      // footer: {
-      //   style: "dark",
-      //   links: [
-      //     {
-      //       title: "BITS Pilani",
-      //       items: [
-      //         {
-      //           label: "Hyderabad Campus",
-      //           to: "#",
-      //           logo: {
-      //             alt: "BITS Logo",
-      //             src: "img/BITS_Pilani-Logo.svg",
-      //           },
-      //         },
-      //       ],
-      //     },
-      //   ],
-      //   logo: {
-      //     alt: "BITS Pilani",
-      //     src: "img/BITS_Pilani-Logo.svg",
-      //     href: "https://www.bits-pilani.ac.in/hyderabad/",
-      //     width: 100,
-      //     height: 100,
-      //   },
-      //   // copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
-      // },
+      footer: {
+        style: "dark",
+        links: [
+          {
+            title: "BITS Pilani",
+            items: [
+              {
+                label: "Hyderabad Campus",
+                to: "#",
+                logo: {
+                  alt: "BITS Logo",
+                  src: "img/BITS_Pilani-Logo.svg",
+                },
+              },
+            ],
+          },
+        ],
+        logo: {
+          alt: "BITS Pilani",
+          src: "img/BITS_Pilani-Logo.svg",
+          href: "https://www.bits-pilani.ac.in/hyderabad/",
+          width: 100,
+          height: 100,
+        },
+        // copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
+      },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,

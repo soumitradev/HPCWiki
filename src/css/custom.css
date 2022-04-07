@@ -22,10 +22,6 @@
   --ifm-toc-border-color: transparent;
 }
 
-[data-theme='light']{
-  --ifm-navbar-background-color: #f1f1f1;
-}
-
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #b64b4b;
@@ -59,7 +55,7 @@ html[data-theme='dark'] footer {
 }
 
 html[data-theme='light'] footer {
-  background-color: #242424;
+  background-color: #f1f1f1;
 }
 
 
@@ -171,4 +167,26 @@ p {
   right: 0;
   width: 100%;
   height: 100%;
+}
+
+.left-logo{
+  margin-left: 1rem;
+}
+
+.right-links{
+  margin-top: 2rem;
+  margin-left: 1.25rem;
+}
+
+.footer__title{
+  font-size: 1.4rem;
+  margin-bottom: 0.25rem;
+}
+
+html[data-theme='light'] .footer__title{
+  color: #4b4b4b;
+}
+
+html[data-theme='light'] .footer__link-item{
+  color: #4b4b4b;
 }
