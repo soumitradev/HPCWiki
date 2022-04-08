@@ -183,6 +183,10 @@ p {
   margin-bottom: 0.25rem;
 }
 
+.theme-doc-sidebar-item-link-level-2{
+  font-size: 0.875rem;
+}
+
 html[data-theme='light'] .footer__title{
   color: #4b4b4b;
 }
@@ -194,3 +198,4 @@ html[data-theme='light'] .footer__link-item{
 html[data-theme='light'] .footer__copyright{
   color: #4b4b4b;
 }
+
