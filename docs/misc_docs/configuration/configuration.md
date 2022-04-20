@@ -10,14 +10,18 @@ title: "Configuration"
 
 ## Specifications
 
+<div align="center">
+
+<p class="center">
 Some of the specifications of the nodes are listed below.
+</p>
 
--   Compute node: It is based on AMD EPYC 7542 processor consisting of 2 * 32 cores and 256GB of RAM.
+| Nodes         | Description                                                              | Interconnect |
+|---------------|--------------------------------------------------------------------------|--------------|
+| login[1-2]    | 16x2 cores AMD EPYC 7282, and 256 GB of memory.                          | EDR          |
+| compute[1-22] | 32x2 cores AMD EPYC 7542, and 256 GB of memory.                          | EDR          |
+| gpu1          | 32x2 cores AMD EPYC 7542, 256 GB of memory, and 1x Tesla V100 PCIe 32GB. | EDR          |
+| gpu[2-3]      | 32x2 cores AMD EPYC 7542, 256 GB of memory, and 2x Tesla V100 PCIe 32GB. | EDR          |
+| gpu4          | 32x2 cores AMD EPYC 7532, 1 TB of memory, and 8x A100 SXM4 80GB.         | HDR          |
 
--   Accelerator node: It is based on AMD EPYC 7542 processor consisting of 2 * 32 cores, 256GB of RAM and an NVIDIA Tesla V100 32GB accelerator card.
-
--   Master node: It is based on AMD EPYC 7282 processor consisting of 2 * 16 cores and 256GB of RAM.
-
--   PFS node: It is based on AMD EPYC 7252 processor consisting of 2 * 8 cores and 128GB of RAM. It provides 128 TBs of usable storage for `/home` and `/scratch` directories together.
-
-These nodes are interconnected using a high speed Mellanox EDR infiniband network with 100Gbps bandwidth.
+</div>

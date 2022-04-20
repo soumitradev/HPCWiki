@@ -142,6 +142,10 @@ p {
   overflow-wrap: normal;
 }
 
+[class^=footerLogoLink] {
+  opacity: 1!important;
+}
+
 .samarkan {
   font-family: 'Samarkan';
   color: #c85555;
@@ -181,6 +185,10 @@ p {
 .footer__title{
   font-size: 1.4rem;
   margin-bottom: 0.25rem;
+}
+
+.center{
+  text-align: center;
 }
 
 .theme-doc-sidebar-item-link-level-2{

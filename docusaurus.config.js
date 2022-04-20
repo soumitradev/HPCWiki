@@ -111,7 +111,7 @@ const config = {
           width: 100,
           height: 100,
         },
-        copyright: `Copyright © ${new Date().getFullYear()}. Released publicly under CC-by-SA-NC-4.0. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Sharanga. All rights reserved. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
