@@ -1,14 +1,14 @@
 ---
-sidebar_position: 5
-sidebar_label: "Accounts"
+sidebar_position: 3
+sidebar_label: "Storage"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null
 pagination_prev : null
-title: "Storage Space"
+title: "Storage"
 ---
 
-## Storage Space
+## Storage
 
 ### How much storage space do I have? 
 

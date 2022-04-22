@@ -1,5 +1,5 @@
 ---
-sidebar_position: 1
+sidebar_position: 5
 sidebar_label: "Packages"
 hide_table_of_contents: true
 hide_title: true

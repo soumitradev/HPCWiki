@@ -8,7 +8,7 @@ pagination_prev : null
 title: "Configuration"
 ---
 
-## Specifications
+## Configuration
 
 <div align="center">
 

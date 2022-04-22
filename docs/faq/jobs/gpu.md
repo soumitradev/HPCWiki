@@ -8,7 +8,8 @@ pagination_prev : null
 title: "GPU"
 ---
 
-## How to schedule a GPU parallel job on Slurm?
+## Job Scheduling for GPU
+### How to schedule a GPU parallel job on Slurm?
 
 Users can use the `sbatch` command provided by Slurm to submit a job script. Note that, for loading the required packages one can use either `Modulefiles` or `Spack`. In the following we have shown example job scripts using `Modulefiles` and `Spack`.
 
