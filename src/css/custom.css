@@ -207,3 +207,10 @@ html[data-theme='light'] .footer__copyright{
   color: #4b4b4b;
 }
 
+.faq-heading{
+  padding-bottom: 0.25rem;
+}
+
+.faq-toc{
+  font-size: 1.15rem;
+}
