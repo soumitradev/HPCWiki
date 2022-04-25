@@ -18,11 +18,9 @@ title: "Usage Policy"
 
 -   User accounts are personal and therefore users are requested not to share their `ssh` keys as it may lead to unauthorised access.
 
--   The user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account.
-
 -   All user accounts are non-transferable.
 
--   Users can access the HPC facility through the public domain `hpc.bits-hyderabad.ac.in`. More details on accessing **Sharanga** are provided in the FAQs document.
+-   Users can access the HPC facility through the public domain `login.hpc.bits-hyderabad.ac.in`. More details on accessing **Sharanga** are provided in the FAQs document.
 
 -   `root` access is prohibited to the users.
 
@@ -52,7 +50,7 @@ title: "Usage Policy"
 
 -   To ensure fair usage of the computing resources, Slurm is configured in such a way that the maximum wall clock time based on CPU parallel codes will not exceed 168 hours. For job submissions on the GPU node, the maximum permissible wall clock time is restricted to 24 hours. Any job exceeding this limit will be terminated without notification. Therefore, it is highly recommended to store the data at regular intervals using checkpoints.
 
--   The HPC committee reserves the right to change the maximum allowed run time periodically.
+-   The HPC team reserves the right to change the maximum allowed run time periodically.
 
 -   While submitting jobs through Slurm, users have to specify the number of computing cores, required memory per node and run-time. Note that accurate job specifications will improve scheduling and result in jobs running sooner.
 

@@ -1,14 +1,94 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 sidebar_label: "Login"
 hide_table_of_contents: true
 hide_title: true
 pagination_next : null
 pagination_prev : null
-title: "Login and Accounts"
+title: "Login"
 ---
 
-## Login and Accounts
+## Login 
+
+### How to login to the HPC facility? 
+
+Users can securely access the HPC facility using the `ssh` protocol.
+#### On Windows: Using Windows 10/11 OpenSSH Client (Recommended)
+
+If you have already generated an SSH key pair using the OpenSSH Client, you can then directly access the login node by using the `Command Prompt`.
+
+-   Press `Windows Key + R` to open the Windows Run Prompt.
+
+-   Type `cmd` and press ENTER.
+
+-   Type `ssh <username>@login.hpc.bits-hyderabad.ac.in` in the console and
+    press ENTER. Here, `<username>` is the `username` provided to you by
+    the HPC team to access the facility. If you have entered a
+    `passphrase` for your ssh key pair please type the password and
+    press ENTER.
+
+-   You should now be connected to the login node of the HPC facility.
+#### On Windows: Using PuTTY (Not Recommended)
+
+-   To launch PuTTY, go to `Start Menu -> All Programs -> PuTTY`.
+
+-   When the program starts, a window titled **PuTTY configuration**
+    should open.
+
+-   Under **Connection** please expand **SSH**.
+
+-   Select **Auth** and a new configuration pane should open on the
+    left.
+
+-   Under `Authentication Parameters`, you will find a **Browser**
+    button. Click on it and select the file path of the Private SSH Key
+    you generated.
+
+-   Once the above process is completed, users can go back to
+    **Session** Category. This window has a configuration pane on the
+    right containing **Hostname (or IP address)** field.
+
+-   Enter `login.hpc.bits-hyderabad.ac.in` in the **Hostname** field and click
+    **Open**.
+
+-   If this is the first time you are trying to login you might get a
+    Security Alert. This is normal, and you should click **Yes**.
+
+-   After the security alert, you should get a terminal window asking
+    for username. Type the `username` provided to you by the HPC team to
+    access the facility. If you have entered a `passphrase` for your ssh
+    key pair, please type the password and press ENTER.
+
+-   You should now be connected to the login node of the HPC facility.
+
+Alternatively, users can click on the **Save** button in the Session category to save the SSH configuration. Users can then quickly connect to the login node by simply loading their saved configuration.
+#### On macOS
+
+Users are recommended to use the `Terminal` application to login using `ssh`. It is located in the utilities, which can be accessed using the Finder.
+
+-   Open Terminal.
+
+-   Type `ssh <username>@login.hpc.bits-hyderabad.ac.in` in the console and
+    press ENTER. Here, `<username>` is the `username` provided to you by
+    the HPC team to access the facility. If you have entered a
+    `passphrase` for your ssh key pair please type the password and
+    press ENTER.
+
+-   You should now be connected to the login node of the HPC facility.
+
+#### On Linux
+
+-   Open a Terminal or Console.
+
+-   Type `ssh <username>@login.hpc.bits-hyderabad.ac.in` in the console and
+    press ENTER. Here, `<username>` is the `username` provided to you by
+    the HPC team to access the facility. If you have entered a
+    `passphrase` for your ssh key pair please type the password and
+    press ENTER.
+
+-   You should now be connected to the login node of the HPC facility.
+
+Please note that you need to have a valid ssh key installed on your machine.
 
 ### How to generate an SSH key pair?
 
@@ -117,89 +197,6 @@ To generate `ssh` keys on a Linux based operating system,
 
 ![Linux Key Random Art.](./OpenSSH-Key-Art-Linux.png)
 
-
-
-### How to login to the HPC facility? 
-
-Users can securely access the HPC facility using the `ssh` protocol.
-
-#### On Windows: Using PuTTY
-
--   To launch PuTTY, go to `Start Menu -> All Programs -> PuTTY`.
-
--   When the program starts, a window titled **PuTTY configuration**
-    should open.
-
--   Under **Connection** please expand **SSH**.
-
--   Select **Auth** and a new configuration pane should open on the
-    left.
-
--   Under `Authentication Parameters`, you will find a **Browser**
-    button. Click on it and select the file path of the Private SSH Key
-    you generated.
-
--   Once the above process is completed, users can go back to
-    **Session** Category. This window has a configuration pane on the
-    right containing **Hostname (or IP address)** field.
-
--   Enter `hpc.bits-hyderabad.ac.in` in the **Hostname** field and click
-    **Open**.
-
--   If this is the first time you are trying to login you might get a
-    Security Alert. This is normal, and you should click **Yes**.
-
--   After the security alert, you should get a terminal window asking
-    for username. Type the `username` provided to you by the HPC team to
-    access the facility. If you have entered a `passphrase` for your ssh
-    key pair, please type the password and press ENTER.
-
--   You should now be connected to the login node of the HPC facility.
-
-Alternatively, users can click on the **Save** button in the Session category to save the SSH configuration. Users can then quickly connect to the login node by simply loading their saved configuration.
-
-#### On Windows: Using Windows 10 OpenSSH Client
-
-If you have already generated an SSH key pair using the OpenSSH Client, you can then directly access the login node by using the `Command Prompt`.
-
--   Press `Windows Key + R` to open the Windows Run Prompt.
-
--   Type `cmd` and press ENTER.
-
--   Type `ssh <username>@hpc.bits-hyderabad.ac.in` in the console and
-    press ENTER. Here, `<username>` is the `username` provided to you by
-    the HPC team to access the facility. If you have entered a
-    `passphrase` for your ssh key pair please type the password and
-    press ENTER.
-
--   You should now be connected to the login node of the HPC facility.
-
-#### On macOS
-
-Users are recommended to use the `Terminal` application to login using `ssh`. It is located in the utilities, which can be accessed using the Finder.
-
--   Open Terminal.
-
--   Type `ssh <username>@hpc.bits-hyderabad.ac.in` in the console and
-    press ENTER. Here, `<username>` is the `username` provided to you by
-    the HPC team to access the facility. If you have entered a
-    `passphrase` for your ssh key pair please type the password and
-    press ENTER.
-
--   You should now be connected to the login node of the HPC facility.
-
-#### On Linux
-
--   Open a Terminal or Console.
-
--   Type `ssh <username>@hpc.bits-hyderabad.ac.in` in the console and
-    press ENTER. Here, `<username>` is the `username` provided to you by
-    the HPC team to access the facility. If you have entered a
-    `passphrase` for your ssh key pair please type the password and
-    press ENTER.
-
--   You should now be connected to the login node of the HPC facility.
-
 ### How do I add another SSH key to my account for remote acccess?
 
 Users can add multiple SSH keys into their `authorized_keys` file of the HPC facility.
@@ -267,3 +264,8 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
 -   Make sure the file has **644** set as file system permission. If
     not, users can run `chmod 644 ~/.ssh/config` to set the file
     permissions.
+
+### I forgot my ssh key passphrase. What should I do?
+
+Unfortunately, there is no way to recover your SSH key passphrase. Please regenerate an ssh key pair and send the public key to `hpc@hyderabad.bits-pilani.ac.in`. For the newly generated
+ssh key pair you may enter a new `passphrase`.
