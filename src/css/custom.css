@@ -114,7 +114,7 @@ div[class^='announcementBarContent'] a:hover {
 }
 
 h2 {
-  font-size: 1.80rem;
+  font-size: 1.8rem;
   text-align: center;
   padding-bottom: 2rem;
   color: #c85555;
@@ -122,6 +122,10 @@ h2 {
 
 h3 {
   font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
 }
 
 /**[class^=anchor] {
@@ -207,10 +211,18 @@ html[data-theme='light'] .footer__copyright{
   color: #4b4b4b;
 }
 
-.faq-heading{
+.faq-heading, .software-heading{
   padding-bottom: 0.25rem;
 }
 
 .faq-toc{
   font-size: 1.15rem;
+}
+
+.ul-circle{
+  list-style: inside;
+}
+
+table tr:nth-child(2n){
+  background-color: transparent;
 }
