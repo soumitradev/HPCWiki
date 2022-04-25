@@ -19,13 +19,26 @@ NAMD is a parallel molecular dynamics code designed for high-performance simulat
 https://www.ks.uiuc.edu/Research/namd/
 
 #### Variants installed
+
 1. namd 2.14
-<div class="ul-circle">
-    - Compiled using: gcc 10.2.0
-</div>
+
+    - Compiler: gcc 10.2.0
+    - Architecture: zen2
+    - Supports MPI
+
+    Spack Command
+    ```bash
+    spack load namd/blihfvg
+    ```
 
 2. namd 2.14
-<div class="ul-circle">
-    - Compiled using: aocc 2.3.0
-</div>
 
+    - Compiler: aocc 2.3.0
+    - Architecture: zen2
+    - Supports MPI
+    - Supports OpenMP
+
+    Spack Command
+    ```bash
+    spack load namd/besm5io
+    ```

@@ -19,8 +19,15 @@ FFTW (AMD Optimized version) is a comprehensive collection of fast C routines fo
 https://developer.amd.com/amd-aocl/fftw/
 
 #### Variants installed
-1. amdfftw 2.2
-<div class="ul-circle">
-    - Compiled using: aocc 2.3.0
-</div>
 
+1. amdfftw 2.2
+
+    - Compiler: aocc 2.3.0
+    - Architecture: zen2
+    - Supports MPI
+    - Supports OpenMP
+
+    Spack Command
+    ```bash
+    spack load amdfftw/shyaggi
+    ```

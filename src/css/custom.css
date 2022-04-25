@@ -195,8 +195,13 @@ p {
   text-align: center;
 }
 
+.theme-doc-sidebar-item-link-level-1, .theme-doc-sidebar-item-category-level-1 {
+  font-weight: 500;
+}
+
 .theme-doc-sidebar-item-link-level-2{
   font-size: 0.875rem;
+  font-weight: normal;
 }
 
 html[data-theme='light'] .footer__title{
@@ -217,10 +222,6 @@ html[data-theme='light'] .footer__copyright{
 
 .faq-toc{
   font-size: 1.15rem;
-}
-
-.ul-circle{
-  list-style: inside;
 }
 
 table tr:nth-child(2n){

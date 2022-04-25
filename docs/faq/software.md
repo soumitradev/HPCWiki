@@ -19,3 +19,6 @@ We currently use RockyLinux 8 a RedHat
 
 ### Can I install a package on my own?
 
+### How hard is it to port my code to run on the facility?
+
+### How often are the software packages updated?

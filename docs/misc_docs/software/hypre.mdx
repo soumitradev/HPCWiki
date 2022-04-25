@@ -19,8 +19,14 @@ Hypre is a library of high performance preconditioners that features parallel mu
 https://computing.llnl.gov/project/linear_solvers/software.php
 
 #### Variants installed
-1. hypre 2.20.0
-<div class="ul-circle">
-    - Compiled using: gcc 10.2.0
-</div>
 
+1. hypre 2.20.0
+
+    - Compiler: gcc 10.2.0
+    - Architecture: zen2
+    - Supports MPI
+
+    Spack Command
+    ```bash
+    spack load hypre/ahw7fyi
+    ```
