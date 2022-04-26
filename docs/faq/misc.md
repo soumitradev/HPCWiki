@@ -16,8 +16,8 @@ We request the users to kindly use the following text to acknowledge the HPC res
 
 > The authors gratefully acknowledge the computing time provided on the high performance computing facility, Sharanga, at the Birla Institute of Technology and Science - Pilani, Hyderabad Campus.
 
-### I am a student of the institute. Can I contribute to the HPC facility?
-Yes, you can contribute to the HPC facility. Please contact us at [hpc@hyderabad.bits-pilani.ac.in](mailto:hpc@hyderabad.bits-pilani.ac.in).
+<!-- ### I am a student of the institute. Can I contribute to the HPC facility?
+Yes, you can contribute to the HPC facility. Please contact us at [hpc@hyderabad.bits-pilani.ac.in](mailto:hpc@hyderabad.bits-pilani.ac.in). -->
 
 ### Is HyperThreading enabled on the compute nodes?
 
@@ -30,11 +30,3 @@ It is well-known that the browser applications consume a lot of system memory an
 ### Can I launch GUI applications such as gnuplot?
 
 Similar to the browser applications, GUI applications (like gnuplot) too consume a lot of memory. Under heavy load, these applications may result in out of memory and disconnection logs. Therefore, we have disabled GUI on the cluster.
-
-### While executing a command, I am getting the error "undefined symbol: EVP\_KDF\_ctrl, version OPENSSL\_1\_1\_1b".
-
-To resolve this issue, please type, `spack unload openssl` in the terminal.
-
-### After launching nano or vi, the application throws a segmentation fault. 
-
-To resolve this error, please type `spack unload openssl` in the terminal.
