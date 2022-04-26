@@ -16,6 +16,9 @@ We request the users to kindly use the following text to acknowledge the HPC res
 
 > The authors gratefully acknowledge the computing time provided on the high performance computing facility, Sharanga, at the Birla Institute of Technology and Science - Pilani, Hyderabad Campus.
 
+### I am a student of the institute. Can I contribute to the HPC facility?
+Yes, you can contribute to the HPC facility. Please contact us at [hpc@hyderabad.bits-pilani.ac.in](mailto:hpc@hyderabad.bits-pilani.ac.in).
+
 ### Is HyperThreading enabled on the compute nodes?
 
 `HyperThreading`, also known as `Simultaneous multithreading` by AMD is disabled on the compute nodes as we observed several performance regressions and compatibility issues.
