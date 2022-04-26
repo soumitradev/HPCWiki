@@ -95,7 +95,7 @@ const config = {
             items: [
               {
                 label: "Hyderabad Campus",
-                to: "https://sharanga.hpc.bits-hyderabad.ac.in/",
+                to: "https://www.bits-pilani.ac.in/hyderabad/",
                 logo: {
                   alt: "BITS Logo",
                   src: "img/BITS_Pilani-Logo.svg",
@@ -107,7 +107,7 @@ const config = {
         logo: {
           alt: "BITS Pilani",
           src: "img/BITS_Pilani-Logo.svg",
-          href: "https://sharanga.hpc.bits-hyderabad.ac.in/",
+          href: "https://www.bits-pilani.ac.in/hyderabad/",
           width: 85,
           height: 85,
         },
