@@ -10,7 +10,7 @@ title: "Configuration"
 
 ## Configuration
 
-<div align="center">
+<div class="content-center">
 
 <p class="center">
 Some of the specifications of the nodes are listed below.

@@ -32,6 +32,6 @@ Similar to the browser applications, GUI applications (like gnuplot) too consume
 
 To resolve this issue, please type, `spack unload openssl` in the terminal.
 
-### After launching nano or vi(m), the application throws a segmentation fault. 
+### After launching nano or vi, the application throws a segmentation fault. 
 
 To resolve this error, please type `spack unload openssl` in the terminal.
