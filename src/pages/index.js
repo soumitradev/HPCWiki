@@ -31,7 +31,7 @@ export default function Home() {
         <HomepageFeatures />
         <Highlight
           title=""
-          content="Sharanga is the high performance computing cluster at the BITS Pilani - Hyderabad Campus. This facility is meant for research purposes. It is a heterogeneous system consisting of 22 compute nodes and 4 accelerator nodes, supporting CPU and GPU parallel computations. The total computing power in terms of Rpeak is around 190 Teraflops."
+          content="Sharanga is the high performance computing cluster at the BITS Pilani - Hyderabad Campus. This facility is meant for research purposes. It is a heterogeneous system consisting of 22 compute nodes and 4 accelerator nodes, supporting CPU and GPU parallel computations. The total computing power in terms of Rpeak is around 200 Teraflops."
         />
       </main>
     </Layout>
