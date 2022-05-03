@@ -68,7 +68,7 @@ Configuration variables for Slurm start with `SBATCH`.
     exclusively on CPUs, we use the `compute` partition.
 
 -   `-N` represents the number of nodes to be used. In the present
-    example, we are using $1$ node.
+    example, we are using 1 node.
 
 -   `-n` represents the number of tasks to be executed. For codes
     employing distributed parallelism, users are requested to specify
@@ -81,18 +81,18 @@ Configuration variables for Slurm start with `SBATCH`.
 ```
 
 -   `--mem` represents the maximum amount of required memory. Here, we
-    are requesting $512$ Megabytes of memory. Note that Slurm
+    are requesting 512 Megabytes of memory. Note that Slurm
     prioritises lower memory jobs over higher memory jobs in the queue.
     This may result in delayed execution of higher memory jobs.
     Therefore, users are requested to give accurate and desirable memory
     limits.
 
 -   `-t` represents the maximum wall clock time the job requires. Here,
-    we are requesting $4$ days, $2$ hours and $23$ minutes. Slurm
+    we are requesting 4 days, 2 hours and 23 minutes. Slurm
     prioritises shorter time limit jobs over longer time limit jobs in
     the queue. This may result in delayed execution of longer time limit
     jobs. Therefore, users are requested to give accurate and desirable
-    time limits. Note that setting values greater than $168$ hours will
+    time limits. Note that setting values greater than 168 hours will
     result in the termination of the job by Slurm automatically.
 
 -   `--job-name` represents the name of the job.
@@ -106,7 +106,7 @@ Configuration variables for Slurm start with `SBATCH`.
 
 -   `-e` represents `stderr`.
 
-We are instructing Slurm to redirect `stdout` and `stderr` of the executed application to disk. For example, if your `jobid` is $121$, then `slurm.121.out` would contain the normal output of the application, while `slurm.121.err` would contain the error output of the application. These files will be stored in the directory, where the jobs were launched from.
+We are instructing Slurm to redirect `stdout` and `stderr` of the executed application to disk. For example, if your `jobid` is 121, then `slurm.121.out` would contain the normal output of the application, while `slurm.121.err` would contain the error output of the application. These files will be stored in the directory, where the jobs were launched from.
 
 ``` {.bash linenos="" startFrom="last"}
    #SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
@@ -191,7 +191,7 @@ Configuration variables for Slurm start with `SBATCH`.
     exclusively on CPUs, we use the `compute` partition.
 
 -   `-N` represents the number of nodes to be used. In the present
-    example, we are using $1$ node.
+    example, we are using 1 node.
 
 -   `-n` represents the number of tasks to be executed. For codes
     employing distributed parallelism, users are requested to specify
@@ -204,18 +204,18 @@ Configuration variables for Slurm start with `SBATCH`.
 ```
 
 -   `--mem` represents the maximum amount of required memory. Here, we
-    are requesting $512$ Megabytes of memory. Note that Slurm
+    are requesting 512 Megabytes of memory. Note that Slurm
     prioritises lower memory jobs over higher memory jobs in the queue.
     This may result in delayed execution of higher memory jobs.
     Therefore, users are requested to give accurate and desirable memory
     limits.
 
 -   `-t` represents the maximum wall clock time the job requires. Here,
-    we are requesting $4$ days, $2$ hours and $23$ minutes. Slurm
+    we are requesting 4 days, 2 hours and 23 minutes. Slurm
     prioritises shorter time limit jobs over longer time limit jobs in
     the queue. This may result in delayed execution of longer time limit
     jobs. Therefore, users are requested to give accurate and desirable
-    time limits. Note that setting values greater than $168$ hours will
+    time limits. Note that setting values greater than 168 hours will
     result in the termination of the job by Slurm automatically.
 
 -   `--job-name` represents the name of the job.
@@ -229,7 +229,7 @@ Configuration variables for Slurm start with `SBATCH`.
 
 -   `-e` represents `stderr`.
 
-We are instructing Slurm to redirect `stdout` and `stderr` of the executed application to disk. For example, if your `jobid` is $121$, then `slurm.121.out` would contain the normal output of the application, while `slurm.121.err` would contain the error output of the application. These files will be stored in the directory, where the jobs were launched from.
+We are instructing Slurm to redirect `stdout` and `stderr` of the executed application to disk. For example, if your `jobid` is 121, then `slurm.121.out` would contain the normal output of the application, while `slurm.121.err` would contain the error output of the application. These files will be stored in the directory, where the jobs were launched from.
 
 ``` {.bash linenos="" startFrom="last"}
    #SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in

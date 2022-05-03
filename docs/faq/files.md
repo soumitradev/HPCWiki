@@ -41,7 +41,7 @@ The file deletion date of a file can be obtained using the command `date`. For e
 $ date -d "2020-08-18 23:21:06.000000000 +0530 +15days"
 ```
 
-Here, `2020-08-18 23:21:06.000000000 +0530` is the access time of the file, obtained using the `stat` command as shown earlier. Since the files stores in `$SCRATCH` are automatically deleted after $15$ days from its last modification, we need to add `+15days` to the access time. The output of the above command will be:
+Here, `2020-08-18 23:21:06.000000000 +0530` is the access time of the file, obtained using the `stat` command as shown earlier. Since the files stores in `$SCRATCH` are automatically deleted after 15 days from its last modification, we need to add `+15days` to the access time. The output of the above command will be:
 
 ```bash
 Wed Sep  2 23:21:06 IST 2020

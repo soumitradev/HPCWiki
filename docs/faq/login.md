@@ -208,7 +208,7 @@ Users can add multiple SSH keys into their `authorized_keys` file of the HPC fac
 -   Append the contents of the new public key at the end of the file.
     Please ensure that the entire content of the public key fits in one
     single line with no additional spaces in between. Note that, each
-    line in this file represents $1$ ssh key pair.
+    line in this file represents 1 ssh key pair.
 
 -   Save the file and exit. You should now be able to connect from the
     newly added machine.

@@ -12,7 +12,7 @@ title: "Storage"
 
 ### How much storage space do I have? 
 
-Users are provided with 40GiB of storage space in their `$HOME` directory and unlimited storage space (subject to the availability) in their `$SCRATCH` directory. Please note that files stored in `$SCRATCH` directory are deleted after $15$ days from their last modification date.
+Users are provided with 40GiB of storage space in their `$HOME` directory and unlimited storage space (subject to the availability) in their `$SCRATCH` directory. Please note that files stored in `$SCRATCH` directory are deleted after 15 days from their last modification date.
 
 ### How to find the current status of my storage quota?
 
@@ -42,7 +42,7 @@ The `du` command lists the size of files/folders.
 $ du
 ```
 
-For example, if we want to view the top $20$ files and directories occupying the most space in `$HOME` directory, then type the following command:
+For example, if we want to view the top 20 files and directories occupying the most space in `$HOME` directory, then type the following command:
 
 ```bash
 $ du -ah ~/ 2>/dev/null | sort -n -r | head -n 20
@@ -56,7 +56,7 @@ $ du -sh ~/.??*
 
 ### Is there any backup available for my data?
 
-Currently, we maintain daily backups of the `$HOME` directory for a period of $30$ days. This is subjected to the HPC policy and also the availability of storage space on the backup drives. In case a user has accidentally lost any of their data, they may contact the system administrator at <hpc@hyderabad.bits-pilani.ac.in> for a possible restoration.
+Currently, we maintain daily backups of the `$HOME` directory for a period of 30 days. This is subjected to the HPC policy and also the availability of storage space on the backup drives. In case a user has accidentally lost any of their data, they may contact the system administrator at <hpc@hyderabad.bits-pilani.ac.in> for a possible restoration.
 
 Please note that `$SCRATCH` directory is **not** backed up by the system and therefore not restorable in case of any loss of data. Users are advised to maintain their **own** backups as the HPC facility is not responsible for the loss of users data.
 

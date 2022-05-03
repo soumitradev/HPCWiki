@@ -65,14 +65,14 @@ Configuration variables for Slurm start with `SBATCH`.
     exclusively on GPUs, we use the `gpu` partition.
 
 -   `-N` represents the number of nodes to be used. In the present
-    example, we are using $1$ node. Note that, at present, Sharanga has
+    example, we are using 1 node. Note that, at present, Sharanga has
     provision for only one GPU node.
 
 -   `-n` represents the number of tasks to be executed. For codes
     employing distributed parallelism such as GPGPUs or hybrid parallel
     models based on CPUs and GPUs, users are requested to specify the
     number of tasks as the number of compute cores required. In the
-    present example, $n$ is set to $1$.
+    present example, n is set to 1.
 
 ``` {.bash linenos="" startFrom="last"}
    #SBATCH --mem 512M
@@ -81,18 +81,18 @@ Configuration variables for Slurm start with `SBATCH`.
 ```
 
 -   `--mem` represents the maximum amount of required memory. Here, we
-    are requesting $512$ Megabytes of memory. Note that Slurm
+    are requesting 512 Megabytes of memory. Note that Slurm
     prioritises lower memory jobs over higher memory jobs in the queue.
     This may result in delayed execution of higher memory jobs.
     Therefore, users are requested to give accurate and desirable memory
     limits.
 
 -   `-t` represents the maximum wall clock time the job requires. Here,
-    we are requesting $0$ days, $4$ hours and $51$ minutes. Slurm
+    we are requesting 0 days, 4 hours and 51 minutes. Slurm
     prioritises shorter time limit jobs over longer time limit jobs in
     the queue. This may result in delayed execution of longer time limit
     jobs. Therefore, users are requested to give accurate and desirable
-    time limits. Note that setting values greater than $24$ hours will
+    time limits. Note that setting values greater than 24 hours will
     result in the termination of the job by Slurm automatically.
 
 -   `--job-name` represents the name of the job.
@@ -107,7 +107,7 @@ Configuration variables for Slurm start with `SBATCH`.
 -   `-e` represents `stderr`.
 
 We are instructing Slurm to redirect `stdout` and `stderr` of the
-executed application to disk. For example, if your `jobid` is $121$,
+executed application to disk. For example, if your `jobid` is 121,
 then `slurm.121.out` would contain the normal output of the application,
 while `slurm.121.err` would contain the error output of the application.
 These files will be stored in the directory, where the jobs were
@@ -118,10 +118,10 @@ launched from.
 ```
 
 -   `-gres` represents `generic resource`. Here, we are informing Slurm
-    that our job requires $1$ GPU card of any type.
+    that our job requires 1 GPU card of any type.
 
 We are instructing Slurm to redirect `stdout` and `stderr` of the
-executed application to disk. For example, if your `jobid` is $121$,
+executed application to disk. For example, if your `jobid` is 121,
 then `slurm.121.out` would contain the normal output of the application,
 while `slurm.121.err` would contain the error output of the application.
 These files will be stored in the directory, where the jobs were
@@ -215,14 +215,14 @@ Configuration variables for Slurm start with `SBATCH`.
     exclusively on GPUs, we use the `gpu` partition.
 
 -   `-N` represents the number of nodes to be used. In the present
-    example, we are using $1$ node. Note that, at present, Sharanga has
+    example, we are using 1 node. Note that, at present, Sharanga has
     provision for only one GPU node.
 
 -   `-n` represents the number of tasks to be executed. For codes
     employing distributed parallelism such as GPGPUs or hybrid parallel
     models based on CPUs and GPUs, users are requested to specify the
     number of tasks as the number of compute cores required. In the
-    present example, $n$ is set to $1$.
+    present example, n is set to 1.
 
 ``` {.bash linenos="" startFrom="last"}
    #SBATCH --mem 512M
@@ -231,18 +231,18 @@ Configuration variables for Slurm start with `SBATCH`.
 ```
 
 -   `--mem` represents the maximum amount of required memory. Here, we
-    are requesting $512$ Megabytes of memory. Note that Slurm
+    are requesting 512 Megabytes of memory. Note that Slurm
     prioritises lower memory jobs over higher memory jobs in the queue.
     This may result in delayed execution of higher memory jobs.
     Therefore, users are requested to give accurate and desirable memory
     limits.
 
 -   `-t` represents the maximum wall clock time the job requires. Here,
-    we are requesting $0$ days, $4$ hours and $51$ minutes. Slurm
+    we are requesting 0 days, 4 hours and 51 minutes. Slurm
     prioritises shorter time limit jobs over longer time limit jobs in
     the queue. This may result in delayed execution of longer time limit
     jobs. Therefore, users are requested to give accurate and desirable
-    time limits. Note that setting values greater than $24$ hours will
+    time limits. Note that setting values greater than 24 hours will
     result in the termination of the job by Slurm automatically.
 
 -   `--job-name` represents the name of the job.
@@ -261,9 +261,9 @@ Configuration variables for Slurm start with `SBATCH`.
 ```
 
 -   `-gres` represents `generic resource`. Here, we are informing Slurm
-    that our job requires $1$ GPU card of any type.
+    that our job requires 1 GPU card of any type.
 
-We are instructing Slurm to redirect `stdout` and `stderr` of the executed application to disk. For example, if your `jobid` is $121$, then `slurm.121.out` would contain the normal output of the application, while `slurm.121.err` would contain the error output of the application. These files will be stored in the directory where the jobs were launched from.
+We are instructing Slurm to redirect `stdout` and `stderr` of the executed application to disk. For example, if your `jobid` is 121, then `slurm.121.out` would contain the normal output of the application, while `slurm.121.err` would contain the error output of the application. These files will be stored in the directory where the jobs were launched from.
 
 ``` {.bash linenos="" startFrom="last"}
    #SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
