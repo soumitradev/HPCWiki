@@ -15,21 +15,21 @@ Users can use the `sbatch` command provided by Slurm to submit a job script. Not
 
 #### Example of a job script using Modulefiles
 
-``` {.bash linenos=""}
-   #!/bin/bash
-   #SBATCH -p gpu
-   #SBATCH -N 1
-   #SBATCH -n 1
-   #SBATCH --mem 512M
-   #SBATCH -t 0-4:51 # time (D-HH:MM)
-   #SBATCH --job-name="hello_test"
-   #SBATCH -o slurm.%j.out
-   #SBATCH -e slurm.%j.err
-   #SBATCH --gres=gpu:1
-   #SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
-   #SBATCH --mail-type=ALL
-   module load cuda-11.0.2
-   srun ./execname
+```bash
+#!/bin/bash
+#SBATCH -p gpu
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --mem 512M
+#SBATCH -t 0-4:51 # time (D-HH:MM)
+#SBATCH --job-name="hello_test"
+#SBATCH -o slurm.%j.out
+#SBATCH -e slurm.%j.err
+#SBATCH --gres=gpu:1
+#SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
+#SBATCH --mail-type=ALL
+module load cuda-11.0.2
+srun ./execname
 ```
 
 To submit the above job script use the following command.
@@ -46,16 +46,16 @@ $ sbatch --test-only job.sh
 
 Note that this does not actually submit the job. A detailed explanation for each code snippet of the job script `job.sh` is given below.
 
-``` {.bash linenos=""}
-   #!/bin/bash
+```bash
+#!/bin/bash
 ```
 
 This is the standard convention to let the linux shell know what interpreter to run.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH -p gpu
-   #SBATCH -N 1
-   #SBATCH -n 1
+```bash
+#SBATCH -p gpu
+#SBATCH -N 1
+#SBATCH -n 1
 ```
 
 Configuration variables for Slurm start with `SBATCH`.
@@ -74,10 +74,10 @@ Configuration variables for Slurm start with `SBATCH`.
     number of tasks as the number of compute cores required. In the
     present example, n is set to 1.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH --mem 512M
-   #SBATCH -t 0-4:51 # time (D-HH:MM)
-   #SBATCH --job-name="hello_test"
+```bash
+#SBATCH --mem 512M
+#SBATCH -t 0-4:51 # time (D-HH:MM)
+#SBATCH --job-name="hello_test"
 ```
 
 -   `--mem` represents the maximum amount of required memory. Here, we
@@ -97,9 +97,9 @@ Configuration variables for Slurm start with `SBATCH`.
 
 -   `--job-name` represents the name of the job.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH -o slurm.%j.out
-   #SBATCH -e slurm.%j.err
+```bash
+#SBATCH -o slurm.%j.out
+#SBATCH -e slurm.%j.err
 ```
 
 -   `-o` represents `stdout`.
@@ -113,8 +113,8 @@ while `slurm.121.err` would contain the error output of the application.
 These files will be stored in the directory, where the jobs were
 launched from.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH --gres=gpu:1
+```bash
+#SBATCH --gres=gpu:1
 ```
 
 -   `-gres` represents `generic resource`. Here, we are informing Slurm
@@ -127,9 +127,9 @@ while `slurm.121.err` would contain the error output of the application.
 These files will be stored in the directory, where the jobs were
 launched from.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
-   #SBATCH --mail-type=ALL
+```bash
+#SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
+#SBATCH --mail-type=ALL
 ```
 
 -   `–mail-user` represents the email address to which job events are to
@@ -143,16 +143,16 @@ launched from.
     percent of time limit) and TIME\_LIMIT\_50 (reached 50 percent of
     time limit). Here, we have specified the event type to be `ALL`.
 
-``` {.bash linenos="" startFrom="last"}
-   module load cuda-11.0.2
+```bash
+module load cuda-11.0.2
 ```
 
 We are using Modulefiles to set the environment needed to run our
 application. The example application depends on `CUDA`, which is an
 Nvidia framework for allowing users to utilise GPUs.
 
-``` {.bash linenos="" startFrom="last"}
-   srun ./execname
+```bash
+srun ./execname
 ```
 
 Finally, we are using `srun` to start the execution of the application.
@@ -162,21 +162,21 @@ and efficient management of resources via Slurm automatically.
 
 #### Example of a job script using Spack
 
-``` {.bash linenos=""}
-   #!/bin/bash
-   #SBATCH -p gpu
-   #SBATCH -N 1
-   #SBATCH -n 1
-   #SBATCH --mem 512M
-   #SBATCH -t 0-4:51 # time (D-HH:MM)
-   #SBATCH --job-name="hello_test"
-   #SBATCH -o slurm.%j.out
-   #SBATCH -e slurm.%j.err
-   #SBATCH --gres=gpu:1
-   #SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
-   #SBATCH --mail-type=ALL
-   spack load cuda@11.0.2
-   srun ./execname
+```bash
+#!/bin/bash
+#SBATCH -p gpu
+#SBATCH -N 1
+#SBATCH -n 1
+#SBATCH --mem 512M
+#SBATCH -t 0-4:51 # time (D-HH:MM)
+#SBATCH --job-name="hello_test"
+#SBATCH -o slurm.%j.out
+#SBATCH -e slurm.%j.err
+#SBATCH --gres=gpu:1
+#SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
+#SBATCH --mail-type=ALL
+spack load cuda@11.0.2
+srun ./execname
 ```
 
 To submit the above job script use the following command.
@@ -195,17 +195,17 @@ $ sbatch --test-only job.sh
 Note that this does not actually submit the job. A detailed explanation
 for each code snippet of the job script `job.sh` is given below.
 
-``` {.bash linenos=""}
-   #!/bin/bash
+```bash
+#!/bin/bash
 ```
 
 This is the standard convention to let the linux shell know what
 interpreter to run.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH -p gpu
-   #SBATCH -N 1
-   #SBATCH -n 1
+```bash
+#SBATCH -p gpu
+#SBATCH -N 1
+#SBATCH -n 1
 ```
 
 Configuration variables for Slurm start with `SBATCH`.
@@ -224,10 +224,10 @@ Configuration variables for Slurm start with `SBATCH`.
     number of tasks as the number of compute cores required. In the
     present example, n is set to 1.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH --mem 512M
-   #SBATCH -t 0-4:51 # time (D-HH:MM)
-   #SBATCH --job-name="hello_test"
+```bash
+#SBATCH --mem 512M
+#SBATCH -t 0-4:51 # time (D-HH:MM)
+#SBATCH --job-name="hello_test"
 ```
 
 -   `--mem` represents the maximum amount of required memory. Here, we
@@ -247,17 +247,17 @@ Configuration variables for Slurm start with `SBATCH`.
 
 -   `--job-name` represents the name of the job.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH -o slurm.%j.out
-   #SBATCH -e slurm.%j.err
+```bash
+#SBATCH -o slurm.%j.out
+#SBATCH -e slurm.%j.err
 ```
 
 -   `-o` represents `stdout`.
 
 -   `-e` represents `stderr`.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH --gres=gpu:1
+```bash
+#SBATCH --gres=gpu:1
 ```
 
 -   `-gres` represents `generic resource`. Here, we are informing Slurm
@@ -265,9 +265,9 @@ Configuration variables for Slurm start with `SBATCH`.
 
 We are instructing Slurm to redirect `stdout` and `stderr` of the executed application to disk. For example, if your `jobid` is 121, then `slurm.121.out` would contain the normal output of the application, while `slurm.121.err` would contain the error output of the application. These files will be stored in the directory where the jobs were launched from.
 
-``` {.bash linenos="" startFrom="last"}
-   #SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
-   #SBATCH --mail-type=ALL
+```bash
+#SBATCH --mail-user=<username>@hyderabad.bits-pilani.ac.in
+#SBATCH --mail-type=ALL
 ```
 
 -   `–mail-user` represents the email address to which job events are to
@@ -281,14 +281,14 @@ We are instructing Slurm to redirect `stdout` and `stderr` of the executed appli
     percent of time limit) and TIME\_LIMIT\_50 (reached 50 percent of
     time limit). Here, we have specified the event type to be `ALL`.
 
-``` {.bash linenos="" startFrom="last"}
-   spack load cuda@11.0.2
+```bash
+spack load cuda@11.0.2
 ```
 
 We are using Spack to set the environment needed to run our application. The example application depends on `CUDA`, which is an Nvidia framework for allowing users to utilise GPUs.
 
-``` {.bash linenos="" startFrom="last"}
-   srun ./execname
+```bash
+srun ./execname
 ```
 
 Finally, we are using `srun` to start the execution of the application. This is somewhat analogous to `mpirun`. Users are requested **not** to use `mpirun` and instead use `srun`. `srun` takes care of the allocation and efficient management of resources via Slurm automatically.

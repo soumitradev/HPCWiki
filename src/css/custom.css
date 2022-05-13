@@ -20,6 +20,8 @@
   --ifm-navbar-link-hover-color: var(--ifm-color-primary-darker);
   --ifm-breadcrumb-color-active: var(--ifm-color-primary-darker);
   --ifm-toc-border-color: transparent;
+  --ifm-link-color: #c85555;
+  --ifm-link-hover-color: var(--ifm-link-color);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */

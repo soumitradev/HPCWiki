@@ -14,13 +14,15 @@ title: "Storage"
 
 Users are provided with 40GiB of storage space in their `$HOME` directory and unlimited storage space (subject to the availability) in their `$SCRATCH` directory. Please note that files stored in `$SCRATCH` directory are deleted after 15 days from their last modification date.
 
-### How to find the current status of my storage quota?
+### How to find the current usage of my storage quota in $HOME?
 
-Users are provided with 40GiB of storage quota for their home directories. Details on the quota can be obtained using the command `usertools`.
+Users can obtain the current usage of their storage quota in $HOME by typing the following command in the terminal.
 
 ```bash
 $ usertools quota info
 ```
+
+An example output would be:
 
 ```bash
 Username: nischay
@@ -34,6 +36,9 @@ Total Storage Consumed: 2.14 GiB (5.35 %)
 
 To ensure fair share of storage resources on the HPC facility, users have limited disk quota for their `$HOME` directory. Once the storage space exceeds the allotted quota, users might receive the above message. To resolve this issue, we request the users to either shift files from their `$HOME` directory to `$SCRATCH` or to their personal machine.
 
+### Can I increase my storage quota?
+
+Users are provided with 40GiB of storage quota for their home directories. However, users can request for more storage space on a case by case basis by contacting the HPC facility. Please include a proper justification for the request.
 ### How to find the files and directories that are occupying significant space in home directory? 
 
 The `du` command lists the size of files/folders.

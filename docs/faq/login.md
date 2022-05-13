@@ -238,10 +238,10 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
 -   Type the following text without the `$` symbol. Example shown is for
     300 seconds and users can change this value accordingly.
 
-    ```bash
-    $ Host *
-        ServerAliveInterval 300
-    ```
+```bash
+$ Host *
+    ServerAliveInterval 300
+```
 
 -   Save this file as **config** under
     `C:\Users\<your username>\.ssh\config`.
@@ -254,10 +254,10 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
     the `$` symbol. Example shown is for 300 seconds and users can
     change this value accordingly.
 
-    ```bash
-    $ Host *
-        ServerAliveInterval 300
-    ```
+```bash
+$ Host *
+    ServerAliveInterval 300
+```
 
 -   Save this file as **config** under `~/.ssh/config`.
 
@@ -267,5 +267,5 @@ By default `ssh` enforces a maximum idle time after last input from user. This i
 
 ### I forgot my ssh key passphrase. What should I do?
 
-Unfortunately, there is no way to recover your SSH key passphrase. Please regenerate an ssh key pair and send the public key to `hpc@hyderabad.bits-pilani.ac.in`. For the newly generated
+Unfortunately, there is no way to recover your SSH key passphrase. Please regenerate an ssh key pair and send the public key to <hpc@hyderabad.bits-pilani.ac.in>. For the newly generated
 ssh key pair you may enter a new `passphrase`.

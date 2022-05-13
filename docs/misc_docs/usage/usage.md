@@ -10,23 +10,23 @@ title: "Usage Policy"
 
 ## Usage Policy
 
-### Access and user accounts
+### User accounts and access
 
--   To access the HPC facility, a valid user account and BITS email id is required.
+-   User accounts are created only for the faculty of the institute.
 
--   The computing facility can be accessed through `ssh`. However, for secured access, at the time of account creation, users have to provide the `ssh` public key of the machine that is being used to connect.
+-   The computing facility can be accessed through `ssh` via the publicly accessible domain `login.hpc.bits-hyderabad.ac.in`. However, for secured access, at the time of account creation, users have to provide the `ssh` public key of the machine that is being used to connect.
 
 -   User accounts are personal and therefore users are requested not to share their `ssh` keys as it may lead to unauthorised access.
 
 -   All user accounts are non-transferable.
 
--   Users can access the HPC facility through the public domain `login.hpc.bits-hyderabad.ac.in`. More details on accessing **Sharanga** are provided in the FAQs document.
-
 -   `root` access is prohibited to the users.
+
+- More details on accessing **Sharanga** are provided in the [FAQs section](../../faq/faq.mdx).
 
 ### Storage and data security
 
--   Users are provisioned with 40GB of storage space in the `/home` directory. `/home` acts as a personal repository for the user data and is mounted across all nodes. Additional storage space may be provided upon request and valid justification, subject to availability.
+-   Users are provisioned with 40GiB of storage space in the `/home` directory. `/home` acts as a personal repository for the user data and is mounted across all nodes. Additional storage space may be provided upon request and valid justification, subject to availability.
 
 -   Apart from the `/home` directory, users are given unlimited storage space in `/scratch`. `/scratch` acts as a temporary storage location and files stored in it are purged automatically after 15 days following the last modifications. Please note that this deletion process is done by the system automatically.
 
@@ -34,21 +34,21 @@ title: "Usage Policy"
 
 ### Backups
 
--   `/home` directory is backed up incrementally on a daily basis using Borg backup. Backups older than 30 days will be deleted automatically. Note that files stored in `/scratch` are not backed.
+-   `/home` directory is backed up daily. Backups older than 30 days will be deleted automatically. Note that files stored in `/scratch` are not backed.
 
 -   Although Backups are stored locally, any untoward incident that affects the HPC facility may destroy both the primary and backup copies of the user files. The HPC center cannot guarantee the safety of the files stored on HPC resources.
 
--   Users are advised to take backups at least once every 30 days.
+-   Users are advised to take backup of their data periodically.
 
 ### Job scheduling and resource allocation
 
 -   Users should use the login node for interactive access and transferring files. All compilation and job scheduling should be performed on the login node. However, users are not allowed to run their codes on the login node.
 
--   To submit jobs on the compute nodes, the HPC facility uses a job scheduler called Slurm Workload Manager. The job scheduler is responsible for managing jobs on the compute and accelerator nodes and returning the output to the user.
+-   To submit jobs on the compute and accelerator nodes, the HPC facility uses a job scheduler called Slurm Workload Manager. The job scheduler is responsible for managing jobs on these nodes.
 
--   For running any job on the HPC facility, the job has to utilise a minimum of 4 cores. Jobs using a lower number of cores including serial codes will not be allowed to run. Furthermore, submitted jobs should be in multiples of 4 up to a maximum of 512 cores.
+-   For running any CPU parallel job on the HPC facility, the job has to utilise a minimum of 4 cores. Jobs using a lower number of cores including serial codes will not be allowed to run. Furthermore, submitted jobs should be in multiples of 4 up to a maximum of 1024 cores.
 
--   To ensure fair usage of the computing resources, Slurm is configured in such a way that the maximum wall clock time based on CPU parallel codes will not exceed 168 hours. For job submissions on the GPU node, the maximum permissible wall clock time is restricted to 24 hours. Any job exceeding this limit will be terminated without notification. Therefore, it is highly recommended to store the data at regular intervals using checkpoints.
+-   To ensure fair usage of the computing resources, Slurm is configured in such a way that the maximum wall clock time based on CPU parallel codes will not exceed 168 hours. For job submissions on the GPU node, the maximum permissible wall clock time is restricted to 12 hours. Any job exceeding this limit will be terminated without notification.
 
 -   The HPC team reserves the right to change the maximum allowed run time periodically.
 
@@ -60,15 +60,24 @@ title: "Usage Policy"
 
 ### Software support and maintenance
 
--   All the relevant open source software packages are by default installed. However, if any user desires to have additional packages they are requested to contact the system administrator through <hpc@hyderabad.bits-pilani.ac.in> for the same.
+-   All the relevant open source software packages are installed. However, if any user desires to have additional packages they are requested to contact the system administrator through <hpc@hyderabad.bits-pilani.ac.in> for the same.
 
 -   Installation of commercial software on HPC facility must include a valid license. No software will be installed without prior proof of license eligibility.
 
--   Note that only the system administrator is authorised to install software or any other packages on the facility.
+-   Note that only the system administrator is authorised to install software packages globally on the facility.
 
--   For the purpose of security, performance, and stability, software will be updated periodically. However, some updates may require temporary downtime of the facility, which will be informed via relevant mailing list.
+-   For the purpose of security, performance, and stability, software packages will be updated periodically. However, some updates may require temporary downtime of the facility, which will be informed via relevant mailing list.
 
-### Account expiration and termination
+### Account suspension and termination
+
+- User accounts will be suspended if they are not active for more than three months. Once suspended, the user will not be able to access the cluster. To restore the account,
+the user is requested to contact the HPC team.
+
+- User account will expire once the faculty leaves the institute. Users leaving the institute will be given a period of 15 days to transfer all their files starting from the last working day at the institute. During this period, users can no longer submit their jobs. After this period, the account will be terminated.
+
+- Note that the user accounts are subjected to the institute IT policies and violation of these policies can result in termination of the account.
+
+<!-- ### Account expiration and termination
 
 -   User accounts will expire when users leave the Institute or the accounts have been inactive for more than three months.
 
@@ -78,7 +87,7 @@ title: "Usage Policy"
 
 -   Users of the accounts that are inactive for more than three months will be given a period of 15 days to transfer their files.
 
--   Note that the user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account.
+-   Note that the user accounts are subjected to institute IT policies and violation of these policies can result in termination of the account. -->
 
 ### Publications
 
