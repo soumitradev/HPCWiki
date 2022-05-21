@@ -1,0 +1,110 @@
+---
+sidebar_position: 2
+sidebar_label: "CUDA"
+hide_table_of_contents: true
+hide_title: true
+pagination_next : null
+pagination_prev : null
+title: "CUDA"
+draft: false
+---
+
+## CUDA
+
+### What is CUDA? Does Sharanga have GPU nodes supporting CUDA?
+CUDA is a parallel computing platform developed by NVIDIA. The HPC facility has nodes that support CUDA based GPU acceleration.
+
+### What are the available GPU partitions?
+We have configured GPU (CUDA) enabled partitions with the prefix `gpu_`. You can view the list of partitions by running the following command:
+
+```bash
+$ scontrol show partitions | grep Name=gpu_
+```
+
+You may see the following output:
+
+```bash
+PartitionName=gpu_v100_1
+PartitionName=gpu_v100_2
+PartitionName=gpu_a100_8
+```
+
+### How to compile a CUDA C, C++, or Fortran code?
+
+A CUDA C, C++, or Fortran code can be compiled using NVIDIA HPC Software Development Kit (SDK). The NVIDIA HPC SDK is a set of tools and libraries that enable you to develop and run applications targetting NVIDIA's CUDA architecture on HPC clusters. 
+
+To compile programs using the NVIDIA HPC SDK, load the appropriate `nvhpc` module. Currently, we have multiple versions of the `nvhpc` module installed on Sharanga. Use the following command to view the list of available `nvhpc` modules:
+
+```bash
+$ spack find nvhpc
+```
+
+Load the appropriate `nvhpc` module along with its version. For example, to load the `nvhpc` module for version `22.3`:
+
+```bash
+$ spack load nvhpc@22.3
+```
+
+The NVIDIA HPC SDK is now loaded into your environment. You can now compile your CUDA C, C++, or Fortran applications using their respective compilers.
+
+We have provided an equivalent GNU Compiler command for reference.
+
+<div class="content-center">
+
+| NVHPC Compiler Collection | GNU Compiler Collection |
+|:-------------------------:|:-----------------------:|
+|            nvc            |           gcc           |
+|           nvc++           |           g++           |
+|         nvfortran         |         gfortran        |
+
+</div>
+
+For example to compile a C CUDA application `sample.cu` using NVHPC C compiler `nvc`:
+
+```bash
+$ nvc sample.cu
+```
+
+### How to compile a CUDA Python code?
+
+A CUDA Python code can be compiled using any of the following Python packages:
+
+#### Numba
+
+[Numba](https://numba.pydata.org/) is a high-performance JIT compiler for Python that supports compiling Python code to CUDA. Since there are multiple versions of Numba compiler we have not installed them globally. Instead, we recommend users to install the required version of Numba locally from Anaconda 3. The following command will install Numba in your Anaconda environment (For details on Anaconda installation, please refer to the [Anaconda](./anaconda.md) page):
+
+```bash
+$ conda install numba cudatoolkit
+```
+
+You should now be able to run your CUDA Python codes using Numba.
+
+#### PyCUDA
+
+[PyCUDA](https://documen.tician.de/pycuda/) is a wrapper for the CUDA API. It allows you to write CUDA C++ code and directly import it in your Python code. We recommend installing PyCUDA from Anaconda 3. The following command will install PyCUDA in your Anaconda environment:
+
+```bash
+$ conda install -c conda-forge pycuda 
+```
+
+#### CuPy
+
+If your project involves a significant usage of NumPy and SciPy, we recommend you to use [CuPy](https://cupy.dev/). CuPy provides a dropdown replacement to NumPy and SciPy, which is optimized for GPU acceleration. We recommend installing CuPy from Anaconda 3. The following command will install CuPy in your Anaconda environment:
+
+```bash
+$ conda install -c conda-forge cupy
+```
+
+### How to compile a CUDA Julia code?
+
+A CUDA Julia code can be compiled using `CUDA.jl`. [CUDA.jl](https://juliagpu.org/) is a Julia package providing a programming interface for targeting CUDA. You can install CUDA.jl from the Julia REPL. Type `]` to enter the Pkg REPL mode and run:
+
+```bash
+pkg> add CUDA
+```
+
+Alternatively, from the Julia REPL, you can install CUDA.jl by running the following command:
+
+```bash
+julia> import Pkg; Pkg.add("CUDA")
+```

@@ -1,0 +1,47 @@
+---
+sidebar_position: 1
+sidebar_label: "MPI"
+hide_table_of_contents: true
+hide_title: true
+pagination_next : null
+pagination_prev : null
+title: "MPI"
+draft: false
+---
+
+## MPI (Message Passing Interface)
+
+### What is MPI?
+
+MPI also known as message passing interface is a set of standards that define a way to exchange data between processes. Most CPU parallel programming languages use MPI for communication.
+
+### What MPI implementations are available on Sharanga?
+Currently, we support the following MPI implementations:
+
+- [OpenMPI](https://www.open-mpi.org/)
+- [MPICH](https://www.mpich.org/)
+- [MVAPICH2](https://mvapich.cse.ohio-state.edu/)
+
+Type the following command in the terminal to view the list of available MPI modules:
+
+```bash
+$ spack find mpi
+```
+
+We request the users to use these modules as they are optimised to run on Sharanga. To compile a MPI based CPU parallel job on Sharanga, use any of the following MPI commands. We have also provided an equivalent GNU Compiler command for the same.
+
+<div class="content-center">
+
+| MPI Compiler Collection | GNU Compiler Collection |
+|:-----------------------:|:-----------------------:|
+|          mpicc          |           gcc           |
+|      mpic++, mpicxx     |           g++           |
+|         mpifort         |         gfortran        |
+
+</div>
+
+For example to compile a C++ MPI application `sample.cxx` using MPI C++ compiler `mpic++`:
+
+```bash
+$ mpic++ sample.cxx
+```
