@@ -123,7 +123,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 h4 {
@@ -135,8 +135,13 @@ h4 {
 }*/
 
 p {
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   text-align: justify;
+}
+
+.home__image {
+  background-image: url('../../static/img/home_background.jpg');
+  background-position: center 43%;
 }
 
 [class^=hero__title] {
@@ -146,6 +151,10 @@ p {
   font-style: normal;
   font-size: 3.5rem;
   overflow-wrap: normal;
+}
+
+.hero--primary {
+  padding: 17rem !important;
 }
 
 [class^=footerLogoLink] {
