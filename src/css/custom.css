@@ -139,10 +139,10 @@ p {
   text-align: justify;
 }
 
-.home__image {
-  background-image: url('../../static/img/home_background.jpg');
-  background-position: center 43%;
-}
+/* .home__image {
+  background-image: url('../../static/img/home_cropped.webp');
+  /* background-position: center 43%; */
+/* } */
 
 [class^=hero__title] {
   /*font-family: 'Anton';*/
