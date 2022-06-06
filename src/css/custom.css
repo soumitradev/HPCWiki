@@ -165,7 +165,8 @@ ul {
 
 @media (min-device-width: 900px) {
   .hero--primary {
-    padding: 17rem !important;
+    padding-top: 32rem !important;
+    padding-bottom: 2rem !important;
   }
 }
 
@@ -181,11 +182,15 @@ ul {
 
 [class^=hero__title] {
   font-family: 'Oswald';
+  letter-spacing: 0.04em;
+  text-shadow: 4px 4px 8px #000;
 }
 
 [class^=hero__subtitle] {
   font-size: 1.3rem;
   text-align: center;
+  letter-spacing: 0.04em;
+  text-shadow: 4px 4px 8px #000;
 }
 
 .iframe-container {
