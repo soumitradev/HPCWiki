@@ -67,15 +67,18 @@ html[data-theme='light'] footer {
 }*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;900&display=swap');
 
 :root {
   --ifm-font-family-base: 'Roboto';
 }
 
-.navbar .navbar__items {
+div[class^='navbar__item'] {
   flex: auto;
+  font-family: "Source Sans Pro", "Roboto";
+  font-size: 1.2rem;
+  font-weight: bold;
 }
-
 
 /* Header Dropdown Menu */
 .dropdown__link {
@@ -139,10 +142,17 @@ p {
   text-align: justify;
 }
 
-/* .home__image {
-  background-image: url('../../static/img/home_cropped.webp');
+ul {
+  font-size: 1.2rem;
+}
+
+.home__image {
+  background-image: url('../../static/img/home_background.jpg');
+  background-size: cover;
+  background-position: 50% 66%;
+  background-repeat: no-repeat;
   /* background-position: center 43%; */
-/* } */
+/* }
 
 [class^=hero__title] {
   /*font-family: 'Anton';*/
@@ -153,9 +163,12 @@ p {
   overflow-wrap: normal;
 }
 
-.hero--primary {
-  padding: 17rem !important;
+@media (min-device-width: 900px) {
+  .hero--primary {
+    padding: 17rem !important;
+  }
 }
+
 
 [class^=footerLogoLink] {
   opacity: 1!important;
