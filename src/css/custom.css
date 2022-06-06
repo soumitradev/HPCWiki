@@ -180,10 +180,30 @@ ul {
   color: #c85555;
 }
 
+@media (min-device-width: 900px) {
+  [class^=hero__title] {
+    text-shadow: 2px 2px 4px #304f2f;
+  }
+
+  [class^=hero__subtitle] {
+    text-shadow: 2px 2px 4px #304f2f;
+  }
+}
+
+@media (max-device-width: 900px) {
+  [class^=hero__title] {
+    font-size: 2rem;
+  }
+
+  [class^=hero__subtitle] {
+    font-size: 0.9rem;
+  }
+}
+
 [class^=hero__title] {
   font-family: 'Oswald';
   letter-spacing: 0.04em;
-  text-shadow: 4px 4px 8px #000;
+
 }
 
 [class^=hero__subtitle] {
