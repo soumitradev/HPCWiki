@@ -147,9 +147,12 @@ ul {
 }
 
 .home__image {
-  background-image: url('../../static/img/home_background.jpg');
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.4), 
+    rgba(0, 0, 0, 0.4)
+  ), url('../../static/img/home_background.jpg');
   background-size: cover;
-  background-position: 50% 66%;
+  background-position: 50% 68%;
   background-repeat: no-repeat;
   /* background-position: center 43%; */
 /* }
@@ -203,11 +206,11 @@ ul {
 [class^=hero__title] {
   font-family: 'Oswald';
   letter-spacing: 0.04em;
-
+  font-size: 3.5rem;
 }
 
 [class^=hero__subtitle] {
-  font-size: 1.3rem;
+  font-size: 2rem;
   text-align: center;
   letter-spacing: 0.04em;
   text-shadow: 4px 4px 8px #000;
