@@ -179,6 +179,10 @@ ul {
   color: #c85555;
 }
 
+[class^=hero__title] {
+  font-family: 'Oswald';
+}
+
 [class^=hero__subtitle] {
   font-size: 1.3rem;
   text-align: center;
