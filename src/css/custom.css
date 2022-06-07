@@ -118,6 +118,11 @@ div[class^='announcementBarContent'] a:hover {
   text-align: justify;
 }
 
+.footer__logo {
+  width: 65px;
+  height: 100px;
+}
+
 h2 {
   font-size: 1.8rem;
   text-align: center;
@@ -150,7 +155,7 @@ ul {
   background-image: linear-gradient(
     rgba(0, 0, 0, 0.4), 
     rgba(0, 0, 0, 0.4)
-  ), url('../../static/img/home_background.jpg');
+  ), url('../../static/img/home_background.webp');
   background-size: cover;
   background-position: 50% 68%;
   background-repeat: no-repeat;
