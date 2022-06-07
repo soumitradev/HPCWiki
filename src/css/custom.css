@@ -202,12 +202,14 @@ ul {
   font-family: 'Oswald';
   letter-spacing: 0.04em;
   font-size: 3.5rem;
+  color: #ffffff
 }
 
 [class^=hero__subtitle] {
   font-size: 2rem;
   text-align: center;
   letter-spacing: 0.06em;
+  color: #ffffff
 }
 
 .iframe-container {
