@@ -171,7 +171,7 @@ ul {
   overflow-wrap: normal;
 }
 
-@media (min-device-width: 900px) {
+@media (min-device-width: 700px) {
   .hero--primary {
     padding-top: 32rem !important;
     padding-bottom: 2rem !important;
@@ -188,7 +188,7 @@ ul {
   color: #c85555;
 }
 
-@media (max-device-width: 900px) {
+@media (max-device-width: 700px) {
   [class^=hero__title] {
     font-size: 2rem;
   }
