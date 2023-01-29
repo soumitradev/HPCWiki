@@ -13,20 +13,31 @@ displayed_sidebar: null
 
 
 #### Description
-Optimized primitives for collective multi-GPU communication.
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-https://github.com/NVIDIA/nccl
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
-1. nccl 2.8.3-1
+1. nccl 2.11.4-1
 
-    - Compiler: gcc 9.3.0
-    - Architecture: zen2
+    - Compiler: gcc 8.5.0
+    - Architecture: zen
     - Supports CUDA
 
     Spack Command
     ```bash
-    $ spack load nccl/sazlqgr
+    $ spack load nccl/rcu4lyw
+    ```
+
+2. nccl 2.14.3-1
+
+    - Compiler: nvhpc 22.5
+    - Architecture: zen
+    - Supports CUDA
+
+    Spack Command
+    ```bash
+    $ spack load nccl/cv4liaz
     ```

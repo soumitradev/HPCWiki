@@ -13,29 +13,21 @@ displayed_sidebar: null
 
 
 #### Description
-MPICH is a high performance and widely portable implementation of the Message Passing Interface (MPI) standard.
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-https://www.mpich.org
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
-1. mpich 3.3.2
+1. mpich 4.0.2
 
-    - Compiler: gcc 9.3.0
+    - Compiler: nvhpc 22.5
     - Architecture: zen2
+    - Supports CUDA
+    - Supports OpenMP
 
     Spack Command
     ```bash
-    $ spack load mpich/arbjh2r
-    ```
-
-2. mpich 3.3.2
-
-    - Compiler: gcc 10.2.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load mpich/nrxxjej
+    $ spack load mpich/bjjkdit
     ```

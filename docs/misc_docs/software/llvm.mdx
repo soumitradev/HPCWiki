@@ -13,19 +13,51 @@ displayed_sidebar: null
 
 
 #### Description
-The LLVM Project is a collection of modular and reusable compiler and toolchain technologies. Despite its name, LLVM has little to do with traditional virtual machines, though it does provide helpful libraries that can be used to build them. The name "LLVM" itself is not an acronym; it is the full name of the project.
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-https://llvm.org/
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
 1. llvm 12.0.1
 
-    - Compiler: gcc 10.2.0
-    - Architecture: zen2
+    - Compiler: gcc 8.5.0
+    - Architecture: zen
 
     Spack Command
     ```bash
-    $ spack load llvm/i7ie7wm
+    $ spack load llvm/sdcts24
+    ```
+
+2. llvm 12.0.1
+
+    - Compiler: gcc 8.5.0
+    - Architecture: zen
+
+    Spack Command
+    ```bash
+    $ spack load llvm/inj4bmb
+    ```
+
+3. llvm 13.0.1
+
+    - Compiler: gcc 8.5.0
+    - Architecture: zen
+    - Supports CUDA
+
+    Spack Command
+    ```bash
+    $ spack load llvm/cxnumfy
+    ```
+
+4. llvm 13.0.1
+
+    - Compiler: gcc 8.5.0
+    - Architecture: zen
+    - Supports CUDA
+
+    Spack Command
+    ```bash
+    $ spack load llvm/khjzvwq
     ```

@@ -13,31 +13,31 @@ displayed_sidebar: null
 
 
 #### Description
-bzip2 is a freely available, patent free high-quality data compressor. It typically compresses files to within 10% to 15% of the best available techniques (the PPM family of statistical compressors), whilst being around twice as fast at compression and six times faster at decompression.
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-https://sourceware.org/bzip2/
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
 1. bzip2 1.0.6
+
+    - Compiler: aocc 3.2.0
+    - Architecture: zen2
+
+    Spack Command
+    ```bash
+    $ spack load bzip2/d2bcz73
+    ```
+
+2. bzip2 1.0.6
 
     - Compiler: gcc 8.5.0
     - Architecture: zen
 
     Spack Command
     ```bash
-    $ spack load bzip2/7qdyhbd
-    ```
-
-2. bzip2 1.0.6
-
-    - Compiler: gcc 10.2.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load bzip2/e734ufp
+    $ spack load bzip2/6m4krrv
     ```
 
 3. bzip2 1.0.6
@@ -47,35 +47,5 @@ https://sourceware.org/bzip2/
 
     Spack Command
     ```bash
-    $ spack load bzip2/binfkr4
-    ```
-
-4. bzip2 1.0.8
-
-    - Compiler: aocc 2.3.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load bzip2/itvbclx
-    ```
-
-5. bzip2 1.0.8
-
-    - Compiler: gcc 9.3.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load bzip2/il2naeb
-    ```
-
-6. bzip2 1.0.8
-
-    - Compiler: gcc 10.2.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load bzip2/72rw76q
+    $ spack load bzip2/cgpz7g4
     ```

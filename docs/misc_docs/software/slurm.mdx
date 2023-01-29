@@ -13,69 +13,59 @@ displayed_sidebar: null
 
 
 #### Description
-Slurm is an open source, fault-tolerant, and highly scalable cluster management and job scheduling system for large and small Linux clusters. Slurm requires no kernel modifications for its operation and is relatively self-contained. As a cluster workload manager, Slurm has three key functions. First, it allocates exclusive and/or non-exclusive access to resources (compute nodes) to users for some duration of time so they can perform work. Second, it provides a framework for starting, executing, and monitoring work (normally a parallel job) on the set of allocated nodes. Finally, it arbitrates contention for resources by managing a queue of pending work.
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-https://slurm.schedmd.com
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
-1. slurm 20-11-2
+1. slurm 22.05.3
 
-    - Compiler: aocc 2.3.0
+    - Compiler: aocc 3.2.0
     - Architecture: zen2
 
     Spack Command
     ```bash
-    $ spack load slurm/6eyof2i
+    $ spack load slurm/jotxswa
     ```
 
-2. slurm 20-11-2
+2. slurm 22.05.3
 
-    - Compiler: gcc 9.3.0
-    - Architecture: zen2
+    - Compiler: gcc 8.5.0
+    - Architecture: zen
 
     Spack Command
     ```bash
-    $ spack load slurm/lfhiiss
+    $ spack load slurm/4rwtavk
     ```
 
-3. slurm 20-11-2
-
-    - Compiler: gcc 10.2.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load slurm/plwaaqr
-    ```
-
-4. slurm 21-08-0
-
-    - Compiler: gcc 9.4.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load slurm/qzuqx7u
-    ```
-
-5. slurm 21-08-0
-
-    - Compiler: gcc 10.3.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load slurm/h5duvmn
-    ```
-
-6. slurm 21-08-0
+3. slurm 22.05.3
 
     - Compiler: gcc 11.2.0
     - Architecture: zen2
 
     Spack Command
     ```bash
-    $ spack load slurm/tfnuu6t
+    $ spack load slurm/dljsmyq
+    ```
+
+4. slurm 22.05.3
+
+    - Compiler: nvhpc 22.5
+    - Architecture: zen
+
+    Spack Command
+    ```bash
+    $ spack load slurm/nagpvk2
+    ```
+
+5. slurm 22.05.3
+
+    - Compiler: nvhpc 22.5
+    - Architecture: zen2
+
+    Spack Command
+    ```bash
+    $ spack load slurm/e6csy2a
     ```

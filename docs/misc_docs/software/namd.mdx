@@ -13,32 +13,35 @@ displayed_sidebar: null
 
 
 #### Description
-NAMD is a parallel molecular dynamics code designed for high-performance simulation of large biomolecular systems.
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-https://www.ks.uiuc.edu/Research/namd/
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
 1. namd 2.14
 
-    - Compiler: gcc 10.2.0
+    - Compiler: aocc 3.2.0
     - Architecture: zen2
     - Supports MPI
-
-    Spack Command
-    ```bash
-    $ spack load namd/blihfvg
-    ```
-
-2. namd 2.14
-
-    - Compiler: aocc 2.3.0
-    - Architecture: zen2
-    - Supports MPI
+    - Supports CUDA
     - Supports OpenMP
 
     Spack Command
     ```bash
-    $ spack load namd/besm5io
+    $ spack load namd/xgccvd2
+    ```
+
+2. namd 2.14
+
+    - Compiler: aocc 3.2.0
+    - Architecture: zen2
+    - Supports MPI
+    - Supports CUDA
+    - Supports OpenMP
+
+    Spack Command
+    ```bash
+    $ spack load namd/vl4byny
     ```

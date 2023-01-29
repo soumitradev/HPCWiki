@@ -13,42 +13,21 @@ displayed_sidebar: null
 
 
 #### Description
-NetCDF (network Common Data Form) is a set of software libraries and machine-independent data formats that support the creation, access, and sharing of array-oriented scientific data. This is the C distribution.
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-https://www.unidata.ucar.edu/software/netcdf
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
-1. netcdf-c 4.7.4
+1. netcdf-c 4.9.0
 
-    - Compiler: aocc 2.3.0
+    - Compiler: gcc 11.2.0
     - Architecture: zen2
     - Supports MPI
+    - Supports OpenMP
 
     Spack Command
     ```bash
-    $ spack load netcdf-c/qvhngtp
-    ```
-
-2. netcdf-c 4.8.0
-
-    - Compiler: gcc 10.2.0
-    - Architecture: zen2
-    - Supports MPI
-
-    Spack Command
-    ```bash
-    $ spack load netcdf-c/n6jvy32
-    ```
-
-3. netcdf-c 4.8.1
-
-    - Compiler: gcc 9.4.0
-    - Architecture: zen2
-    - Supports MPI
-
-    Spack Command
-    ```bash
-    $ spack load netcdf-c/2sap76a
+    $ spack load netcdf-c/wbxikvx
     ```

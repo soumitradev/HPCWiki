@@ -13,49 +13,53 @@ displayed_sidebar: null
 
 
 #### Description
-a communication library implementing high-performance messaging for MPI/PGAS frameworks
+Zstandard, or zstd as short version, is a fast lossless compression algorithm, targeting real-time compression scenarios at zlib-level and better compression ratios.
 
 #### Website
-http://www.openucx.org
+https://facebook.github.io/zstd/
 
 #### Variants installed
 
-1. ucx 1.9.0
+1. ucx 1.13.1
 
-    - Compiler: aocc 2.3.0
+    - Compiler: aocc 3.2.0
     - Architecture: zen2
+    - Supports OpenMP
 
     Spack Command
     ```bash
-    $ spack load ucx/zirh32z
+    $ spack load ucx/gj6pdwq
     ```
 
-2. ucx 1.10.1
+2. ucx 1.13.1
 
-    - Compiler: gcc 10.3.0
-    - Architecture: zen2
+    - Compiler: gcc 8.5.0
+    - Architecture: zen
+    - Supports OpenMP
 
     Spack Command
     ```bash
-    $ spack load ucx/3mgto65
+    $ spack load ucx/rhoq7sk
     ```
 
-3. ucx 1.11.2
-
-    - Compiler: gcc 9.4.0
-    - Architecture: zen2
-
-    Spack Command
-    ```bash
-    $ spack load ucx/45gffld
-    ```
-
-4. ucx 1.12.1
+3. ucx 1.13.1
 
     - Compiler: gcc 11.2.0
     - Architecture: zen2
+    - Supports OpenMP
 
     Spack Command
     ```bash
-    $ spack load ucx/dc56cck
+    $ spack load ucx/sbzor6p
+    ```
+
+4. ucx 1.13.1
+
+    - Compiler: nvhpc 22.5
+    - Architecture: zen
+    - Supports OpenMP
+
+    Spack Command
+    ```bash
+    $ spack load ucx/kmv3yfq
     ```
