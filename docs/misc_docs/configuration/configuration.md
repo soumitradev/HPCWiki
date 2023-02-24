@@ -3,21 +3,21 @@ sidebar_position: 2
 sidebar_label: "Configuration"
 hide_table_of_contents: true
 hide_title: true
-pagination_next : null
-pagination_prev : null
+pagination_next: null
+pagination_prev: null
 title: "Configuration"
 ---
 
 ## Configuration
 
-<div class="content-center">
+<div className="content-center">
 
-<p class="center">
+<p className="center">
 Some of the specifications of the nodes are listed below.
 </p>
 
 | Nodes         | Description                                                              | Interconnect |
-|---------------|--------------------------------------------------------------------------|--------------|
+| ------------- | ------------------------------------------------------------------------ | ------------ |
 | login[1-2]    | 16x2 cores AMD EPYC 7282, and 256 GB of memory.                          | EDR          |
 | compute[1-22] | 32x2 cores AMD EPYC 7542, and 256 GB of memory.                          | EDR          |
 | gpu1          | 32x2 cores AMD EPYC 7542, 256 GB of memory, and 1x Tesla V100 PCIe 32GB. | EDR          |

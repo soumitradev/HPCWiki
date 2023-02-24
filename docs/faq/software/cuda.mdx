@@ -3,8 +3,8 @@ sidebar_position: 2
 sidebar_label: "CUDA"
 hide_table_of_contents: true
 hide_title: true
-pagination_next : null
-pagination_prev : null
+pagination_next: null
+pagination_prev: null
 title: "CUDA"
 draft: false
 ---
@@ -12,9 +12,11 @@ draft: false
 ## CUDA
 
 ### What is CUDA? Does Sharanga have GPU nodes supporting CUDA?
+
 CUDA is a parallel computing platform developed by NVIDIA. The HPC facility has nodes that support CUDA based GPU acceleration.
 
 ### What are the available GPU partitions?
+
 We have configured GPU (CUDA) enabled partitions with the prefix `gpu_`. You can view the list of partitions by running the following command:
 
 ```bash
@@ -31,7 +33,7 @@ PartitionName=gpu_a100_8
 
 ### How to compile a CUDA C, C++, or Fortran code?
 
-A CUDA C, C++, or Fortran code can be compiled using NVIDIA HPC Software Development Kit (SDK). The NVIDIA HPC SDK is a set of tools and libraries that enable you to develop and run applications targetting NVIDIA's CUDA architecture on HPC clusters. 
+A CUDA C, C++, or Fortran code can be compiled using NVIDIA HPC Software Development Kit (SDK). The NVIDIA HPC SDK is a set of tools and libraries that enable you to develop and run applications targetting NVIDIA's CUDA architecture on HPC clusters.
 
 To compile programs using the NVIDIA HPC SDK, load the appropriate `nvhpc` module. Currently, we have multiple versions of the `nvhpc` module installed on Sharanga. Use the following command to view the list of available `nvhpc` modules:
 
@@ -49,13 +51,13 @@ The NVIDIA HPC SDK is now loaded into your environment. You can now compile your
 
 We have provided an equivalent GNU Compiler command for reference.
 
-<div class="content-center">
+<div className="content-center">
 
 | NVHPC Compiler Collection | GNU Compiler Collection |
-|:-------------------------:|:-----------------------:|
+| :-----------------------: | :---------------------: |
 |            nvc            |           gcc           |
 |           nvc++           |           g++           |
-|         nvfortran         |         gfortran        |
+|         nvfortran         |        gfortran         |
 
 </div>
 
@@ -84,7 +86,7 @@ You should now be able to run your CUDA Python codes using Numba.
 [PyCUDA](https://documen.tician.de/pycuda/) is a wrapper for the CUDA API. It allows you to write CUDA C++ code and directly import it in your Python code. We recommend installing PyCUDA from Anaconda 3. The following command will install PyCUDA in your Anaconda environment:
 
 ```bash
-$ conda install -c conda-forge pycuda 
+$ conda install -c conda-forge pycuda
 ```
 
 #### CuPy
