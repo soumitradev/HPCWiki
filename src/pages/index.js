@@ -10,7 +10,9 @@ import Highlight from "@site/src/components/Highlight";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary home__image", styles.heroBanner)}>
+    <header
+      className={clsx("hero hero--primary home__image", styles.heroBanner)}
+    >
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -35,16 +37,13 @@ export default function Home() {
         />
         <Highlight
           title=""
-          content="It is a heterogeneous system consisting of AMD EPYC processors and NVIDIA's Data Center GPUs supporting CPU and GPU parallel computations. There are 22 compute nodes and 4 accelerator nodes with a total computing power of 200 Teraflops. All the nodes in the cluster are connected with an InfiniBand fabric supporting high bandwidth and very low latency. A common parallel file system, Lustre is mounted across the cluster providing around 4 GB/s of read and 2.5 GB/s of write throughput. The total useable storage space is 264 TiB while the archival storage space is 22 TiB."
+          content="It is a heterogeneous system consisting of AMD EPYC processors and NVIDIA's Data Center GPUs supporting CPU and GPU parallel computations. There are 25 compute nodes and 4 accelerator nodes with a total computing power of 220 Teraflops. All the nodes in the cluster are connected with an InfiniBand fabric supporting high bandwidth and very low latency. A common parallel file system, Lustre is mounted across the cluster providing around 4 GB/s of read and 2.5 GB/s of write throughput. The total useable storage space is 264 TiB while the archival storage space is 22 TiB."
         />
         <Highlight
           title=""
           content="Access to the cluster is granted to all the faculty of the institute. Students who wish to use the facilty may contact their faculty advisors. Users can login to Sharanga using a valid account by connecting to any of the login nodes (hpc01.hpc.bits-hyderabad.ac.in, hpc02.hpc.bits-hyderabad.ac.in) or login.hpc.bits-hyderabad.ac.in."
         />
-        <Highlight
-          title=""
-          content=""
-        />
+        <Highlight title="" content="" />
       </main>
     </Layout>
   );
