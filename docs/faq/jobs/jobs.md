@@ -215,3 +215,23 @@ The job is waiting for resources to become available.
 #### TimeLimit
 
 The job exhausted its time limit.
+
+#### QOSMinCpuNotSatisfied
+
+The job's CPU request doesn't meet the minimum limit of some Quality of Service (QOS).
+
+#### QOSMaxJobsPerUserLimit
+
+The job is unable to run because the user has submitted more jobs of a certain type than are allowed to run at a time.
+
+#### PartitionTimeLimit
+
+The job's time limit exceeds the partition's current time limit.
+
+#### QOSMaxGRESPerJob
+
+The job's GRES request exceeds the maximum each job is allowed to use for the requested Quality of Service (QOS).
+
+#### ReqNodeNotAvail
+
+Some node specifically required by the job is not currently available. If the error message also lists the `UnavailableNodes: ` then it is likely that there is an upcoming reservation or maintenance window on that node.
