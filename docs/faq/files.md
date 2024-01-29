@@ -125,3 +125,59 @@ Users can access their `$SCRATCH` space by typing `cd $SCRATCH` in a terminal on
 
 Users are advised to use `rsync` with `-avz` flags for compressible and resumable file transfers.
 
+### How do I remove a large number of files?
+There are two methods to remove a large number of files that are much faster than using `rm -rf`.
+
+1. Using [RSync](https://rsync.samba.org/)
+Let us say that we want to delete a directory called `this_directory`.
+First, create an empty directory.
+
+```bash
+mkdir empty_dir
+```
+
+Next, run this rsync command to delete the directory:
+
+```bash
+rsync -aP --delete empty_dir/ this_directory/
+```
+
+This should delete the contents of `this_directory`.
+Lastly, run `rm -r empty_directory` and `rm -r this_directory` to remove both the empty directories.
+2. Using Perl
+If we want to delete a directory `this_directory` with a large number of files, we first enter the directory with `cd this_directory`, after which we can run the following command:
+
+```bash
+perl -e 'for(<*>){((stat)[9]<(unlink))}'
+```
+
+This will delete all the files inside the directory.
+Lastly, to delete the now-empty directory, run 
+
+```bash
+cd ..; rm -r this_directory
+```
+
+#### Comparison of the two approaches
+
+To delete a test batch of 10,000 files the RSync approach takes 0.136s of real time, while Perl takes 0.0169s.
+In comparison, `rm -rf` requires at least 0.140s of real time to delete the files, and it becomes considerably slower as the number of files increases.
+The benefit of using RSync over Perl despite it being slower is that RSync shows progress for the operation.
+
+#### Warning 
+Please exercise caution while deleting files, as it might not be possible to restore them once deleted. Make sure that the files within the directory being deleted are definitely unnecessary.
+
+### How do I selectively delete files?
+For selectively deleting files, the `find` command with the `-delete` flag is very helpful. 
+For example, to delete all files with the extension `.ext` in a directory, we can use
+
+```bash
+find . -name “*.ext” -delete
+```
+
+Please note that this search is recursive, and files with this extension in subdirectories will be deleted as well.
+`find` has a number of other ways to match files, including time of creation, regular expressions and permissions among other things.
+You can find out more about the parameters of `find` by running the command `man find`.
+
+#### Warning 
+Please exercise caution while deleting files, as it might not be possible to restore them once deleted. Make sure that the files within the directory being deleted are definitely unnecessary.
