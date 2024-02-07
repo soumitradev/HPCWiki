@@ -167,71 +167,66 @@ $ squeue -j <jobid> -l
 ```
 
 The `NODELIST(REASON)` section in the output of the above command will have the reason, why Slurm is unable to run the job. Here are the most common reasons.
+| Job Status             | Reason                                                                                                                                                                                                                      |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| BadConstraints         | The job's constraints can not be satisfied.                                                                                                                                                                                 |
+| Cleaning               | The job is being requeued and still cleaning up from its previous execution.                                                                                                                                                |
+| Dependency             | This job is waiting for a dependent job to complete.                                                                                                                                                                        |
+| JobHeldAdmin           | The job is held by a system administrator. Please contact the system administrator for more information.                                                                                                                    |
+| JobHeldUser            | The job is held by the user.                                                                                                                                                                                                |
+| NonZeroExitCode        | The job terminated with a non-zero exit code.                                                                                                                                                                               |
+| PartitionDown          | The partition required by this job is in a DOWN state.                                                                                                                                                                      |
+| Priority               | One or more higher priority jobs exist for this partition or advanced reservation.                                                                                                                                          |
+| QOSResourceLimit       | The job's Quality of Service (QOS) has reached some resource limit.                                                                                                                                                         |
+| ReqNodeNotAvail        | Some node specifically required by the job is not currently available.                                                                                                                                                      |
+| Resources              | The job is waiting for resources to become available.                                                                                                                                                                       |
+| TimeLimit              | The job exhausted its time limit.                                                                                                                                                                                           |
+| QOSMinCpuNotSatisfied  | The job's CPU request doesn't meet the minimum limit of some Quality of Service (QOS).                                                                                                                                      |
+| QOSMaxJobsPerUserLimit | The job is unable to run because the user has submitted more jobs of a certain type than are allowed to run at a time.                                                                                                      |
+| PartitionTimeLimit     | The job's time limit exceeds the partition's current time limit.                                                                                                                                                            |
+| QOSMaxGRESPerJob       | The job's GRES request exceeds the maximum each job is allowed to use for the requested Quality of Service (QOS).                                                                                                           |
+| ReqNodeNotAvail        | Some node specifically required by the job is not currently available. If the error message also lists the `UnavailableNodes: ` then it is likely that there is an upcoming reservation or maintenance window on that node. |
 
-#### BadConstraints
+### How Do I Optimize My Jobs for Faster Execution?
 
-The job's constraints can not be satisfied.
+The following are some tips for optimizing your jobs for faster execution:
 
-#### Cleaning
+- Use the `--ntasks-per-node` option to specify the number of tasks to run per node. This will ensure that your job runs on a single node and will avoid the overhead of inter-node communication.
+- Minimize I/O operations. For example, if your job requires reading data from a file, read the data into memory at the beginning of the job and then perform all computations in memory. Write the results to a file at the end of the job.
+- Keep your code up to date. If you are using a compiled language such as C or Fortran, use the latest compiler version available on the cluster. If you are using a scripting language such as Python or R, use the latest version of the interpreter available on the cluster.
 
-The job is being requeued and still cleaning up from its previous execution.
+### How Can I Estimate the Resources (CPU, Memory) Needed for My Job?
 
-#### Dependency
+Start with a small job using estimated resources. Monitor its usage using commands like `sstat <jobid>` or `seff <jobid>`. Adjust the resources based on this initial run for future submissions.
 
-This job is waiting for a dependent job to complete.
+### Can I Resume a Job After It Fails?
 
-#### JobHeldAdmin
+If your application supports checkpointing, you can resume from the last checkpoint after a job failure. Otherwise, the job will need to restart from the beginning.
 
-The job is held by a system administrator. Please contact the system administrator for more information.
+We strongly recommend that you use checkpointing to avoid losing work in the event of a job failure.
 
-#### JobHeldUser
+### How do I implement checkpointing in my application?
 
-The job is held by the user.
+Checkpointing is a feature of the application itself. Please consult the documentation for your application to learn how to implement checkpointing.
 
-#### NonZeroExitCode
+### How Do I Allocate Resources for Hybrid MPI/OpenMP Jobs in Slurm?
 
-The job terminated with a non-zero exit code.
+To allocate resources for hybrid MPI/OpenMP jobs, use the `--ntasks-per-node` and `--cpus-per-task` options. For example, to allocate 4 MPI tasks per node with 2 OpenMP threads per task, use the following directive in your Slurm script:
 
-#### PartitionDown
+```bash
+#SBATCH --ntasks-per-node=4
+#SBATCH --cpus-per-task=2
+```
 
-The partition required by this job is in a DOWN state.
+### What Should I Do If a Compute Node Appears to Be Malfunctioning?
 
-#### Priority
+If a compute node appears to be malfunctioning, please contact the HPC team. We will investigate the issue and take appropriate action. If possible, please provide the following information:
 
-One or more higher priority jobs exist for this partition or advanced reservation.
+- The name of the compute node
+- The job ID of the job that was running on the compute node
+- The job script that was used to submit the job
+- Any relevant slurm.out or slurm.err files
 
-#### QOSResourceLimit
+### What Are Strategies for Handling Jobs with Unpredictable Runtime Behavior?
 
-The job's Quality of Service (QOS) has reached some resource limit.
-
-#### ReqNodeNotAvail
-
-Some node specifically required by the job is not currently available.
-
-#### Resources
-
-The job is waiting for resources to become available.
-
-#### TimeLimit
-
-The job exhausted its time limit.
-
-#### QOSMinCpuNotSatisfied
-
-The job's CPU request doesn't meet the minimum limit of some Quality of Service (QOS).
-
-#### QOSMaxJobsPerUserLimit
-
-The job is unable to run because the user has submitted more jobs of a certain type than are allowed to run at a time.
-
-#### PartitionTimeLimit
-
-The job's time limit exceeds the partition's current time limit.
-
-#### QOSMaxGRESPerJob
-
-The job's GRES request exceeds the maximum each job is allowed to use for the requested Quality of Service (QOS).
-
-#### ReqNodeNotAvail
-
-Some node specifically required by the job is not currently available. If the error message also lists the `UnavailableNodes: ` then it is likely that there is an upcoming reservation or maintenance window on that node.
+For jobs with variable runtimes, consider implementing checkpointing and resubmitting the job if it doesn't complete in the expected time. Use Slurm’s job profiling tools (`sstat` and `seff`) to monitor and adjust resource requests.

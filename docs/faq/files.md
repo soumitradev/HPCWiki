@@ -125,6 +125,27 @@ Users can access their `$SCRATCH` space by typing `cd $SCRATCH` in a terminal on
 
 Users are advised to use `rsync` with `-avz` flags for compressible and resumable file transfers.
 
+### What is a good strategy for managing my inode usage?
+
+To manage inode usage, avoid creating a large number of small files. Instead, aggregate data into fewer, larger files where possible. Periodically review and remove unnecessary files or directories.
+
+### How do I check my inode usage?
+
+To check your inode usage, run the following command:
+
+```bash
+# For /home use
+$ lfs quota /home
+# For /scratch use
+$ lfs quota /scratch
+```
+
+Alternatively, you can check your inode usage for a specific directory by running the following command:
+
+```bash
+$ du --inode /path/to/directory
+```
+
 ### How do I remove a large number of files?
 There are two methods to remove a large number of files that are much faster than using `rm -rf`.
 
