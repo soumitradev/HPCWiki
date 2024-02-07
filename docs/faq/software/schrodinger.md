@@ -24,7 +24,7 @@ Yes. Schrödinger is a commercial software suite and requires a license to use. 
 Users with access to Schrödinger can find the path to the software by running the following command:
 
 ```bash
-$ echo $SCSCHRODINGER
+$ echo $SCHRODINGER
 ```
 
 ### How do I get assistance with Schrödinger?
