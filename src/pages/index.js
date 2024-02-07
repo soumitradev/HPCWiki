@@ -37,7 +37,7 @@ export default function Home() {
         />
         <Highlight
           title=""
-          content="It is a heterogeneous system consisting of AMD EPYC processors and NVIDIA's Data Center GPUs supporting CPU and GPU parallel computations. There are 25 compute nodes and 4 accelerator nodes with a total computing power of 220 Teraflops. All the nodes in the cluster are connected with an InfiniBand fabric supporting high bandwidth and very low latency. A common parallel file system, Lustre is mounted across the cluster providing around 4 GB/s of read and 2.5 GB/s of write throughput. The total useable storage space is 264 TiB while the archival storage space is 22 TiB."
+          content="It is a heterogeneous system consisting of AMD EPYC processors and NVIDIA's Data Center GPUs supporting CPU and GPU parallel computations. There are 31 compute nodes and 4 accelerator nodes with a total computing power of 264 Teraflops. All the nodes in the cluster are connected with an InfiniBand fabric supporting high bandwidth and very low latency. A common parallel file system, Lustre is mounted across the cluster providing around 4 GB/s of read and 2.5 GB/s of write throughput. The total useable storage space is 264 TiB while the archival storage space is 22 TiB."
         />
         <Highlight
           title=""
