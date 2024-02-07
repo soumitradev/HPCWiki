@@ -267,5 +267,5 @@ $ Host *
 
 ### I forgot my ssh key passphrase. What should I do?
 
-Unfortunately, there is no way to recover your SSH key passphrase. Please regenerate an ssh key pair and send the public key to <hpc@hyderabad.bits-pilani.ac.in>. For the newly generated
+Unfortunately, there is no way to recover your SSH key passphrase. Please regenerate an ssh key pair and send the public key to [hpc@hyderabad.bits-pilani.ac.in](mailto:hpc@hyderabad.bits-pilani.ac.in). For the newly generated
 ssh key pair you may enter a new `passphrase`.
