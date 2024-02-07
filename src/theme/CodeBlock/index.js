@@ -6,7 +6,9 @@
  */
 import React, { isValidElement, useEffect, useState } from "react";
 import clsx from "clsx";
-import Highlight, { defaultProps } from "prism-react-renderer";
+import { Highlight, Prism } from "prism-react-renderer";
+(typeof global !== "undefined" ? global : window).Prism = Prism
+await import("prismjs/components/prism-bash")
 import {
   useThemeConfig,
   ThemeClassNames,
@@ -61,7 +63,6 @@ export default function CodeBlock({
   if (React.Children.toArray(children).some((el) => isValidElement(el))) {
     return (
       <Highlight
-        {...defaultProps}
         key={String(mounted)}
         theme={prismTheme}
         code=""
@@ -112,7 +113,6 @@ export default function CodeBlock({
       {title && <div className={styles.codeBlockTitle}>{title}</div>}
       <div className={styles.codeBlockContent}>
         <Highlight
-          {...defaultProps}
           key={String(mounted)}
           theme={prismTheme}
           code={code}

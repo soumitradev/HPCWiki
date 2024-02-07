@@ -60,7 +60,7 @@ title: "Usage Policy"
 
 ### Software support and maintenance
 
--   All the relevant open source software packages are installed. However, if any user desires to have additional packages they are requested to contact the system administrator through <hpc@hyderabad.bits-pilani.ac.in> for the same.
+-   All the relevant open source software packages are installed. However, if any user desires to have additional packages they are requested to contact the system administrator through [hpc@hyderabad.bits-pilani.ac.in](mailto:hpc@hyderabad.bits-pilani.ac.in) for the same.
 
 -   Installation of commercial software on HPC facility must include a valid license. No software will be installed without prior proof of license eligibility.
 
@@ -91,6 +91,6 @@ the user is requested to contact the HPC team.
 
 ### Publications
 
-Any form of publications from the work done on the Institute HPC facility should be acknowledged. Details of the published papers acknowledging the HPC facility should be communicated to <hpc@hyderabad.bits-pilani.ac.in>. We request the users to kindly use the following text to acknowledge the HPC resources.
+Any form of publications from the work done on the Institute HPC facility should be acknowledged. Details of the published papers acknowledging the HPC facility should be communicated to [hpc@hyderabad.bits-pilani.ac.in](mailto:hpc@hyderabad.bits-pilani.ac.in). We request the users to kindly use the following text to acknowledge the HPC resources.
 
 > *The authors gratefully acknowledge the computing time provided on the high performance computing facility, Sharanga, at the Birla Institute of Technology and Science - Pilani, Hyderabad Campus.*

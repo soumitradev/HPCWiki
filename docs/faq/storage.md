@@ -61,7 +61,7 @@ $ du -sh ~/.??*
 
 ### Is there any backup available for my data?
 
-Currently, we maintain daily backups of the `$HOME` directory for a period of 30 days. This is subjected to the HPC policy and also the availability of storage space on the backup drives. In case a user has accidentally lost any of their data, they may contact the system administrator at <hpc@hyderabad.bits-pilani.ac.in> for a possible restoration.
+Currently, we maintain daily backups of the `$HOME` directory for a period of 30 days. This is subjected to the HPC policy and also the availability of storage space on the backup drives. In case a user has accidentally lost any of their data, they may contact the system administrator at [hpc@hyderabad.bits-pilani.ac.in](mailto:hpc@hyderabad.bits-pilani.ac.in) for a possible restoration.
 
 Please note that `$SCRATCH` directory is **not** backed up by the system and therefore not restorable in case of any loss of data. Users are advised to maintain their **own** backups as the HPC facility is not responsible for the loss of users data.
 
