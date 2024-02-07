@@ -215,3 +215,47 @@ The job is waiting for resources to become available.
 #### TimeLimit
 
 The job exhausted its time limit.
+
+### How Do I Optimize My Jobs for Faster Execution?
+
+The following are some tips for optimizing your jobs for faster execution:
+
+- Use the `--ntasks-per-node` option to specify the number of tasks to run per node. This will ensure that your job runs on a single node and will avoid the overhead of inter-node communication.
+- Minimize I/O operations. For example, if your job requires reading data from a file, read the data into memory at the beginning of the job and then perform all computations in memory. Write the results to a file at the end of the job.
+- Keep your code up to date. If you are using a compiled language such as C or Fortran, use the latest compiler version available on the cluster. If you are using a scripting language such as Python or R, use the latest version of the interpreter available on the cluster.
+
+### How Can I Estimate the Resources (CPU, Memory) Needed for My Job?
+
+Start with a small job using estimated resources. Monitor its usage using commands like `sstat <jobid>` or `seff <jobid>`. Adjust the resources based on this initial run for future submissions.
+
+### Can I Resume a Job After It Fails?
+
+If your application supports checkpointing, you can resume from the last checkpoint after a job failure. Otherwise, the job will need to restart from the beginning.
+
+We strongly recommend that you use checkpointing to avoid losing work in the event of a job failure.
+
+### How do I implement checkpointing in my application?
+
+Checkpointing is a feature of the application itself. Please consult the documentation for your application to learn how to implement checkpointing.
+
+### How Do I Allocate Resources for Hybrid MPI/OpenMP Jobs in Slurm?
+
+To allocate resources for hybrid MPI/OpenMP jobs, use the `--ntasks-per-node` and `--cpus-per-task` options. For example, to allocate 4 MPI tasks per node with 2 OpenMP threads per task, use the following directive in your Slurm script:
+
+```bash
+#SBATCH --ntasks-per-node=4
+#SBATCH --cpus-per-task=2
+```
+
+### What Should I Do If a Compute Node Appears to Be Malfunctioning?
+
+If a compute node appears to be malfunctioning, please contact the HPC team. We will investigate the issue and take appropriate action. If possible, please provide the following information:
+
+- The name of the compute node
+- The job ID of the job that was running on the compute node
+- The job script that was used to submit the job
+- Any relevant slurm.out or slurm.err files
+
+### What Are Strategies for Handling Jobs with Unpredictable Runtime Behavior?
+
+For jobs with variable runtimes, consider implementing checkpointing and resubmitting the job if it doesn't complete in the expected time. Use Slurm’s job profiling tools (`sstat` and `seff`) to monitor and adjust resource requests.
