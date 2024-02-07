@@ -13,8 +13,17 @@ title: "Accounts"
 ### Who is eligible to get a user account on Sharanga?
 As per HPC policy, user accounts are created only for faculty of the Institute.
 
-### What should I do if I want to get a user account on Sharanga?
-Please contact the HPC team at <hpc@hyderabad.bits-pilani.ac.in>.
+### Is this facility available to other sister institutions of BITS Pilani?
+
+Yes, we do provide access to faculty members of other sister institutions of BITS Pilani Hyderabad.
+
+### How do I request an account on the HPC cluster?
+
+BITS Pilani/Goa/Hyderabad/Dubai faculty, please use this form to request an account on the HPC cluster.
+
+https://forms.gle/XudgYysqLG15gbgNA
+
+We currently do not provide access to students. Students who need access to the HPC cluster should contact their faculty advisor to request an account on their behalf.
 
 ### Can I share my user account with other people?
 Faculty can share their account only with their students. To provide access, the faculty should associate the student's ssh public keys with their account.
