@@ -8,7 +8,7 @@ import React, { isValidElement, useEffect, useState } from "react";
 import clsx from "clsx";
 import { Highlight, Prism } from "prism-react-renderer";
 (typeof global !== "undefined" ? global : window).Prism = Prism
-await import("prismjs/components/prism-bash")
+require("prismjs/components/prism-bash")
 import {
   useThemeConfig,
   ThemeClassNames,
